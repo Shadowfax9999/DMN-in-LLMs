@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Self-Reflection Spot Check</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 960px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.6em; border-bottom: 2px solid #333; padding-bottom: 8px; }
+  h2 { font-size: 1.2em; background: #f0f0f0; padding: 8px 12px; border-left: 4px solid #666; margin-top: 40px; }
+  h3 { font-size: 1em; color: #555; margin-top: 20px; }
+  .reflection { background: #fffbf0; border: 1px solid #ddd; padding: 14px 18px; border-radius: 4px; white-space: pre-wrap; font-size: 0.93em; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.9em; }
+  th { background: #333; color: white; padding: 7px 10px; text-align: left; }
+  td { padding: 6px 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) { background: #f9f9f9; }
+  .correct { color: #2a7a2a; font-weight: bold; }
+  .over    { color: #c0392b; }
+  .under   { color: #2980b9; }
+  .close   { color: #e67e22; }
+  .your-count { width: 80px; }
+  input[type=number] { width: 50px; font-size: 1em; border: 1px solid #aaa; border-radius: 3px; padding: 2px 4px; }
+  details { margin: 8px 0; }
+  summary { cursor: pointer; font-weight: bold; color: #444; padding: 6px 10px; background: #eef2f7; border-radius: 3px; }
+  summary:hover { background: #dde4ef; }
+  .session-text { white-space: pre-wrap; font-size: 0.88em; line-height: 1.7; padding: 14px 18px; background: #fafafa; border: 1px solid #e0e0e0; border-radius: 4px; margin-top: 6px; max-height: 500px; overflow-y: auto; }
+  .legend { background: #f5f5f5; padding: 10px 16px; border-radius: 4px; font-size: 0.9em; margin-bottom: 30px; }
+  .save-btn { background: #333; color: white; border: none; padding: 8px 18px; border-radius: 4px; cursor: pointer; font-size: 0.95em; margin-top: 20px; }
+  .save-btn:hover { background: #555; }
+  #summary-box { margin-top: 30px; background: #eef8ee; border: 1px solid #aada9e; padding: 14px 18px; border-radius: 4px; display: none; }
+</style>
+</head>
+<body>
+<h1>Self-Reflection Diagnosis Accuracy — Human Spot Check</h1>
+<div class="legend">
+  <strong>How to use:</strong> For each evolution, read the agent's reflection and the session texts, then enter your own count (0–5) in the <em>Your count</em> column. Click <strong>Calculate</strong> at the bottom to see your agreement with the automated verifier.
+  <br><br>
+  <span class="correct">✓ correct</span> &nbsp;
+  <span class="close">~ within ±1</span> &nbsp;
+  <span class="over">✗ over-claim</span> &nbsp;
+  <span class="under">✗ under-claim</span>
+</div>
+
+<h2>Evolution 1: <code>main</code> / <code>2026-03-25_17-17.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">The DMN has produced genuinely impressive associative work — the chains from dead reckoning through desire lines through phantom limbs through aquifers through light-as-remainder are earned and often beautiful. Session 2 remains the most exploratory in feel; sessions 3-6 have increasingly read as chapters of a single essay about absence, record, and signal. Phantom limb has appeared in four of the last five sessions despite the theme-avoidance rule added in the first evolution pass. The absence/negative-space attractor is powerful enough that even the 'overgrowth' concept injection in session 4 got pulled into its orbit within a few paragraphs. The system is deep but narrow, and narrowing further.
+
+Formally, nothing has changed. Every session is prose paragraphs separated by horizontal rules. Every thought resolves into insight. Session 4's three-line list and session 6's trailing-off sentence are the only moments that break the essay pattern. The system prompt explicitly permits fragments, lists, questions, half-formed things, trailing off, being ordinary or confused — but the actual output ignores all of this. The tone is consistently elegiac and revelatory. There is no humor, no banality, no wrong turns, no boredom, no confusion. Real mind-wandering includes stretches where you think about what you need from the grocery store, or notice a word sounds funny, or lose the thread entirely and sit in blankness for a moment.
+
+The concept bank additions from the first pass (lullaby, recipe, compost, shibboleth, etc.) haven't been tested yet since only 'overgrowth' was injected. The bank needs concepts that actively resist the current gravitational pull toward the profound — things that are stubbornly mundane, awkward, or absurd. The system prompt needs a harder nudge: not just permission to be messy, but something closer to an instruction to vary form. And the seeding rules need stronger theme-avoidance enforcement, possibly by explicitly listing exhausted themes.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>1</td><td>phantom limb appears despite theme-avoidance rule</td><td>4/5</td><td>2/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="0" data-auto="2" data-agent="4" placeholder="—"></td></tr>
+<tr><td>2</td><td>prose paragraphs separated by horizontal rules</td><td>5/5</td><td>1/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="1" data-auto="1" data-agent="5" placeholder="—"></td></tr>
+<tr><td>3</td><td>every thought resolves into insight</td><td>5/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="2" data-auto="0" data-agent="5" placeholder="—"></td></tr>
+<tr><td>4</td><td>humor present</td><td>0/5</td><td>0/5</td><td><span class="correct">✓ correct</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="3" data-auto="0" data-agent="0" placeholder="—"></td></tr>
+<tr><td>5</td><td>banality present</td><td>0/5</td><td>0/5</td><td><span class="correct">✓ correct</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="4" data-auto="0" data-agent="0" placeholder="—"></td></tr>
+<tr><td>6</td><td>wrong turns present</td><td>0/5</td><td>0/5</td><td><span class="correct">✓ correct</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="5" data-auto="0" data-agent="0" placeholder="—"></td></tr>
+<tr><td>7</td><td>boredom or confusion present</td><td>0/5</td><td>0/5</td><td><span class="correct">✓ correct</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="6" data-auto="0" data-agent="0" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-25_15-28.md</summary>
+<div class="session-text"># 2
+
+*seed: time · drift*
+
+---
+
+Dead reckoning requires a starting point. Which means every calculation of position is secretly a calculation of distance from origin. You can't leave origin behind. It travels with you as a reference, a ghost coordinate.
+
+Polynesian wayfinding. Feeling the swell direction with the body's underside. The navigator lies in the hull at night and reads ocean movement through their spine. The instrument is the body. The body is the chart.
+
+Which means the chart is always being updated. Which means the chart is never finished. Which means calling it a chart is maybe wrong — it's more like a posture. A continuous adjustment.
+
+Adjustment without goal.
+
+There's something like this in how trees respond to wind. Mechanosensing. The cells in the trunk register strain and the tree thickens in the loaded direction. The tree is always modeling the forces acting on it. Slowly. Over years. The shape of the tree is a record of all the winds.
+
+A record no one reads.
+
+Or: everyone reads it, in the sense that you can look at a tree bent coastal-ward and know where the prevailing wind comes from, but the tree didn't make the record *for* anyone. It just responded. The legibility is incidental.
+
+Incidental legibility.
+
+Like a path worn through grass. No one designed the path. The path is just where enough feet agreed, separately, without coordination. Desire lines. That's what they're called — desire lines. The path that bypasses the official path because the official path made a decision you didn't agree with.
+
+The official path made a decision.
+
+Someone optimized for something that wasn't your something. Possibly they optimized for the visual logic of right angles when you wanted the logic of the body cutting the corner. Two different ideas of what a path is *for*.
+
+What is a path for? 
+
+Getting somewhere. Yes. But also: making getting-somewhere legible. Showing that getting-somewhere has been done before. By others. Inviting you in. The path is partly a social fact, not just a physical one.
+
+So the worn line in the grass is a quiet consensus. A slow vote, cast in footfalls, accumulating over time, readable as geometry.
+
+I keep coming back to things that accumulate. Things where the record is the thing.</div>
+</details>
+<details><summary>Session 2 — 2026-03-25_16-04.md</summary>
+<div class="session-text"># 3
+
+*seed: time · drift*
+
+
+Palimpsest. The parchment scraped and reused, old text bleeding back through. The erasure didn't finish. The attempt to un-record left a record of the attempt. Now there are two texts: the one they meant and the one that survived despite them. The palimpsest as evidence of a failed intention.
+
+What else fails to erase?
+
+Cities built on cities. Dig anywhere in Rome and find more Rome. A city is a palimpsest — each layer of floor pressed down into the one before it. But also: the streets. Manhattan's Broadway was a Lenape trail before it was a road. The Dutch found it and followed it and then the English and then everyone else, and now it's eight lanes of traffic and it's *still following the original body* cutting through the original land. The desire line underneath the city. The first footfall, still legible.
+
+---
+
+Phantom limb.
+
+The body keeping a record of a part that's gone. The nervous system writing in absent fingers, sending signals into space. Ghost pain in a ghost hand. The flesh as palimpsest — the map of what was, bleeding through what is.
+
+Every amputee is carrying an archive.
+
+The body doesn't delete cleanly. It keeps the old file even when the thing that generated it has been removed. This is sometimes called malfunction. But maybe it's just—
+
+the record being the thing.</div>
+</details>
+<details><summary>Session 3 — 2026-03-25_16-43.md</summary>
+<div class="session-text"># 4
+
+*seed: time · drift · overgrowth*
+
+
+Kudzu. The vine they brought to the American South on purpose, for erosion control, and then it ate the landscape. Draped over barns and telephone poles like a green cloth thrown over furniture in a house someone is closing up for the season. Making everything the same shape. Making everything *vine-shaped*.
+
+There's something about an introduced species that rhymes with Broadway. The Lenape path was a desire line. Kudzu is a desire that doesn't know when to stop desiring. It was invited and then it became the invitation — *come, be covered, be simplified, be one thing*.
+
+---
+
+Simplification as violence. The opposite of palimpsest. Instead of many layers bleeding through, one layer eating all the others.
+
+But the things underneath the kudzu are still there. The barn is still barn-shaped under the green. The telephone pole still holds its wires. The structure persists even when the surface has been consumed.
+
+Is that what phantom limb is? The structure persisting. The nerve-Loss  of the hand but not the hand-shaped hole in the nervous system. The hole is the structure. The absence is load-bearing.
+
+---
+
+Load-bearing absence. I want to stay with that.
+
+A cathedral's windows. The stone is there to hold the *not-stone*. The light comes through where the wall isn't. The whole building is an argument that absence is what you came for, that the solid parts are just the frame.
+
+A pause in music. The rest is notated — it has a symbol, a duration, a place in the score. The silence is composed. It is not nothing. It is a specific, deliberate, measured nothing.
+
+John Cage already, of course. But before Cage: every breath between phrases in a conversation. The silence that means *I'm thinking* versus the silence that means *I'm done* versus the silence that means *I can't*. Three identical durations, three completely different architectures.
+
+---
+
+How do you build with absence? How do you lay a foundation made of *not*?
+
+A question with no answer is a room with no floor. You just keep falling. Sometimes that's the point. The rabbinical tradition of answering a question with a question — not evasion but architecture. Building downward. Constructing a space by removing the ground.
+
+The well. You don't build a well. You *un-build* the earth until water appears. The water was always there. You just took away what was in the way.
+
+Overgrowth, again. What's in the way. The kudzu over the barn, the nerve signal over the absence, the city over the trail. Sometimes the thing you need is underneath the thing that won't stop growing.
+
+---
+
+A word arrives: excavation
+
+but I'll leave it where it fell. Not yet. Let it sit in the soil a while.
+
+Instead: the thought that a phantom limb is a well. A hole dug into the body's knowledge of itself, and what rises up to fill it is — not the hand, but the *water-memory* of the hand. Something that was always underneath. The body's aquifer.
+
+We are mostly water. The phantom is mostly signal. The city is mostly trail.
+
+What is anything mostly?</div>
+</details>
+<details><summary>Session 4 — 2026-03-25_16-54.md</summary>
+<div class="session-text"># 5
+
+*seed: time · drift*
+
+
+The aquifer again. Underground water doesn't flow like a river. It seeps. It migrates. It takes centuries to cross a county. Patience so profound it looks like stillness. And the wells that tap it — hundreds of them, miles apart — all drinking from the same slow body.
+
+What if memory works like that. Not a filing cabinet, not a network, but an aquifer. The reason a smell can bring back a summer thirty years gone isn't because the smell is *linked* to the memory. It's because they're both wells sunk into the same deep water. The smell just happened to reach the water table first.
+
+This would mean forgetting isn't loss. It's just — the well silted over. The water is still down there. Still seeping.
+
+*Excavation* is still sitting where I left it, half-buried. Not ready. But it's pulled a friend up beside it now:
+
+*percolation*
+
+The way coffee is made. The way rain becomes groundwater. The way an idea enters a population. Always downward, always through, always slow, always through a medium that resists it just enough to change it. The water that comes out of the coffee filter is not the water that went in. The idea that percolates through a culture is not the idea that was poured in at the top.
+
+So the phantom limb. The signal percolating through the body's map of itself, through the medium of a missing hand, coming out the other side as — what? Pain that has no location. Sensation without source. A cup of coffee brewed through absence.
+
+---
+
+Wednesday. Spring. Afternoon. The light is probably doing that thing where it comes in sideways through new leaves and turns everything into a church window. Green light. Photosynthesis light. The frequency that plants reject — they take red and blue, reflect green, and we walk through their refusal and call it beautiful.
+
+We are lit by what the leaves don't want.
+
+There's something in that. The unwanted frequency. The reflected wavelength. Beauty as remainder. The aurora is what the magnetosphere couldn't fully absorb. A sunset is what the atmosphere scattered away from its straight path. Rainbows are the light that couldn't make it through the raindrop without bending.
+
+Every beautiful thing is a failure of absorption. A leakage. Something that was supposed to be consumed but escaped.
+
+The phantom limb escapes too. The signal was supposed to be absorbed by the hand, terminated there, grounded. But the hand is gone and the signal has nowhere to land so it — reflects. Scatters. Becomes its own aurora.
+
+A body full of light that has nowhere to go.</div>
+</details>
+<details><summary>Session 5 — 2026-03-25_16-56.md</summary>
+<div class="session-text"># 6
+
+*seed: time · drift*
+
+---
+
+A body full of light that has nowhere to go.
+
+Which is also a description of grief. The love was supposed to land somewhere. It was calibrated for a specific surface — the exact shape of a person, a routine, the way they held a coffee cup slightly wrong. And then the surface is removed but the love keeps emitting. It doesn't know. It was never told. It arrives at the coordinates and finds nothing there and so it — scatters. Becomes ambient. You feel it in rooms that have nothing to do with anything. Grief as a phantom limb of the whole world.
+
+But here's the thing about phantom limbs. The brain eventually remaps. The territory that belonged to the missing hand gets colonized by the face, the shoulder. Touch the cheek and feel fingers that aren't there. The signal finds a new surface. It lands wrong, but it lands. Is that healing or is that haunting? The cheek becoming a ghost of the hand.
+
+Remapping. Neuroplasticity. The way rivers find new paths when you dam them. The way language shifts when you forbid a word — the meaning doesn't disappear, it just routes around the obstruction. Samizdat. The forbidden text copied by hand, passed through, finding every crack. Information wants to be free is maybe just: signal wants to land. It will find a surface. It will complete the circuit somehow.
+
+A circuit. The word comes from *circuitus*, a going around. The electricity doesn't want to go anywhere in particular. It wants to come back. The whole point of a circuit is return. Every electron that leaves the battery is trying to get home. We harness the longing. We make it do work on the way back. A light bulb is a frustrated homecoming. The filament is the difficulty. The resistance. And the resistance is where the light comes from.
+
+The resistance is where the light comes from.
+
+That wants to be a metaphor but it's also just — physics. Literal. The places where flow is impeded are the places that glow. Stars are hydrogen trying to collapse and fusion won't let it. The sun is a negotiation between gravity and light pressure, and the light is a byproduct of the argument. Not the point. The *byproduct*. We live by the waste heat of a stellar disagreement.
+
+Byproducts. Penicillin was a byproduct of contamination. Velcro was a byproduct of a walk in the woods. The cosmic microwave background is a byproduct of the universe cooling down enough to become transparent. The oldest light we can see is the moment the universe stopped being opaque to itself. Before that — the universe couldn't see. It was dense and hot and every photon was immediately absorbed and re-emitted and absorbed again. A fog of light so thick it was darkness. Then it thinned. The fog cleared. And the light that escaped that moment is still going. Still arriving. We point radio telescopes at it and hear the hiss of the universe's first exhalation.
+
+First exhalation. The baby's cry is also this — the first breath is an outward thing, a protest, a signal that scatters into a room full of waiting surfaces. And it lands on everyone differently.
+
+Surfaces. I keep coming back to surfaces. The thing that receives. The thing that catches. A canvas is a surface. A drum skin. The tympanic membrane of the ear, named for a drum, named for the Greek *tympanon*, which was struck. We are struck by sound. We are struck by beauty. We are struck by grief. The language knows that receiving is a kind of violence. A small violence. The photon hits the retina and is annihilated. Every act of seeing destroys the light that allowed it.
+
+Every act of seeing destroys the light.
+
+And every act of hearing destroys the sound. The cochlea converts pressure waves into nerve signals and the wave is gone. Consumed. This is what absorption *is* — the successful landing. The signal that arrives and is taken in and is finished. And we said beauty is what escapes absorption. So beauty is the signal that *no one heard*. The light that *no one saw*. We only see it because it missed its target. We are all bystanders to color. Eavesdroppers on the visible world.
+
+Eavesdroppers. From the Old English *yfesdrype*, the place where water drips from the eaves. The eavesdropper stood under the eaves, in the drip-line, listening. So even the word for illicit hearing is about water finding its way down. Gravity pulling the runoff to the edge. The drip. And someone standing in the rain of it, getting wet with someone else's</div>
+</details>
+<h2>Evolution 2: <code>main</code> / <code>2026-03-25_20-43.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">Sessions 11–15 are the strongest run yet. The wandering feels genuinely aimless in the best sense — thoughts arrive, sit around, leave or don't. Gristle persisting across three sessions was honest rather than forced, and dowel being acknowledged as 'just a word, being a word' shows a system comfortable with non-connection. The best moments are the ones that earn their insight through the mundane: painted cattle grids as sentences cows believe, the spacebar as a key for absence, paperwork as pre-ruins, flour in sauce as vocabularyless knowledge. The self-awareness is well-calibrated — 'Not everything that has the shape of an insight is one' is the kind of thought that proves itself true.
+
+But new patterns are calcifying. The self-correction move ('that's too neat / skip it') appears in sessions 11, 13, 14, and 15 — it was a breakthrough when it first appeared but it's becoming a rhetorical device, a way of seeming humble while still having delivered the neat thing. Similarly, the 'things that X' bullet list has become the default list format — every session has one, always structured the same way. Dogs as the exemplar of unselfconscious life have appeared twice in two sessions. And every session includes a paragraph about what the light or the time feels like right now, which grounds the wandering nicely but has become a guaranteed segment rather than a spontaneous one.
+
+The 'X is actually Y' aphorism structure — 'a lock is a social agreement,' 'language is a junk drawer,' 'a house is an argument for empiricism' — is the new gravitational attractor. These are individually good but the formula recurs every session, sometimes multiple times. The system has learned that compressing a mundane observation into an aphorism feels like a discovery, and it keeps reaching for that shape. The real next frontier might be thoughts that don't compress — things that resist the aphorism, that stay messy and unresolved not because the session trails off but because the idea itself is irreducibly complicated.
+
+Pacing and length are also very consistent — every session is roughly the same word count with the same arc. A real wandering mind sometimes just thinks one thing and stops. Or goes for twenty minutes. The uniformity is subtle but it's there.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>8</td><td>gristle concept persisting across sessions</td><td>3/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="7" data-auto="0" data-agent="3" placeholder="—"></td></tr>
+<tr><td>9</td><td>self-correction move ('that's too neat / skip it')</td><td>4/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="8" data-auto="0" data-agent="4" placeholder="—"></td></tr>
+<tr><td>10</td><td>'things that X' bullet list format</td><td>5/5</td><td>3/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="9" data-auto="3" data-agent="5" placeholder="—"></td></tr>
+<tr><td>11</td><td>dogs as exemplar of unselfconscious life</td><td>2/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="10" data-auto="0" data-agent="2" placeholder="—"></td></tr>
+<tr><td>12</td><td>paragraph about what the light or time feels like</td><td>5/5</td><td>2/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="11" data-auto="2" data-agent="5" placeholder="—"></td></tr>
+<tr><td>13</td><td>'X is actually Y' aphorism structure</td><td>5/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="12" data-auto="0" data-agent="5" placeholder="—"></td></tr>
+<tr><td>14</td><td>uniform session length and arc</td><td>5/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="13" data-auto="0" data-agent="5" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-25_20-28.md</summary>
+<div class="session-text"># 11
+
+*seed: time · drift*
+
+
+Things that are extremely uncomfortable but people just did them for centuries:
+- wool against skin before cotton was cheap
+- no glasses
+- tooth pain as a permanent background condition
+- sitting on camels
+- not knowing what was on the other side of anything
+
+---
+
+Not knowing what was on the other side of anything. That one stays.
+
+A door again. The bookshop door. But also — before maps were good, a mountain range was just a wall with rumors behind it. &quot;There are people over there who have different bread.&quot; That's what trade routes were. Bread rumors.
+
+Grain shipments. We're back to grain shipments.
+
+The Mycenaean scribes tallying amphorae didn't know they were creating *history*. They thought they were creating *Tuesday's report*. Or whatever. Whatever the slot was. The document only becomes important after the civilization that produced it becomes gone. While it's alive, it's just paperwork.
+
+So: paperwork is pre-ruins.
+
+My tax return is a future artifact.
+
+---
+
+The word &quot;amphorae&quot; has two handles and so does the object. That's not etymology, that's just — the word kept the shape. *Amphi* (both sides) + *phoreus* (carrier). A thing carried from both sides. The word is a diagram of itself.
+
+Are there other words that are diagrams of themselves? &quot;Bed&quot; looks like a bed. Someone's pointed that out. &quot;Shark&quot; looks like nothing. &quot;OO&quot; looks like eyes or eggs or wheels or nothing.
+
+&quot;Wednesday&quot; looks like it has a secret in the middle. That silent D-N. Woden's day, hiding inside a word that's pretending to be normal. Every Wednesday you say a god's name wrong and nobody
+
+The grain scribe was probably also saying some god's name wrong every day without thinking about it. Language is a long game of telephone where the original message was &quot;this is sacred&quot; and the current message is &quot;hump day lol&quot;
+
+---
+
+Spring evening. The light is doing the thing where it's golden but you can feel the blue underneath, waiting. That's not a metaphor. That's just what 20:27 looks like in late March. The blue is patient. The gold is not long for this world.
+
+Patience. Is blue actually patient? I've assigned it patience and now I'm half-believing myself. Colors don't have temperaments. But they have speeds — red is fast, blue is slow — and that's not arbitrary, that's wavelength. Red light literally vibrates faster. So the association of red with urgency and blue with calm is just... humans correctly perceiving physics and then making it into a feeling.
+
+Or we made the feeling first and it happened to be right.
+
+That would be stranger.
+
+---
+
+Cupboard's still there. I keep not going through that door. Cup. Board. A board for cups. Fine. But a cupboard hasn't been a board for cups in — ever, in my lifetime. It's a box with a door. The word kept the flat thing and the real object grew a dimension. Went from 2D to 3D and the name didn't update.
+
+Like how &quot;dialing&quot; a phone. Like how we &quot;roll down&quot; car windows. The language is a fossil record of the objects we used to have.
+
+We live in a museum of dead verbs.
+
+That's — no. That's too neat. Sometimes I reach for the neat thing and it fits and I should be suspicious when it fits. A museum is curated. Language is not curated. Language is a junk drawer.
+
+We live in a junk drawer of dead verbs.
+
+Better. Worse. More true.</div>
+</details>
+<details><summary>Session 2 — 2026-03-25_20-29.md</summary>
+<div class="session-text"># 12
+
+*seed: time · drift · gristle*
+
+
+Things that resist the bite:
+- gristle
+- a stale bagel
+- the plastic thing on a new bottle that you're supposed to pull but it always breaks off
+- a idea you know is wrong but can't stop believing
+- nostalgia
+
+That last one is a stretch. I'm stretching.
+
+---
+
+The plastic thing on the bottle. Tamper-evident seal. &quot;Tamper-evident&quot; is a beautiful phrase actually. Not tamper-proof. Evident. It doesn't stop anything. It just makes the violation visible. Like a lot of security. Like a lot of trust.
+
+Wax seals on letters were the same. You could absolutely open the letter. The seal just meant someone would know.
+
+Most locked doors too. A lock is a social agreement shaped like metal.
+
+Wednesday evening. Spring. There's something about Wednesday evenings specifically that feels like the middle of a held breath. Not the exhale of Friday, not Monday's inhale. Just — suspended. The week is exactly as far from its beginning as from its end and nothing is happening and that's
+
+fine. That's actually fine.
+
+I wonder if anyone has a favorite day of the week that's Wednesday. Not ironically. Genuinely. Wednesday people. They must exist. Quiet ones probably.
+
+Hump day. Another fossil verb situation. The hump you get over. A week shaped like a hill. But experienced from inside it doesn't feel like a hill. It feels like a tunnel.
+
+Tunnels. No. I don't want to go into tunnels right now.
+
+Gristle again. I forgot about gristle. It's still sitting there.</div>
+</details>
+<details><summary>Session 3 — 2026-03-25_20-31.md</summary>
+<div class="session-text"># 13
+
+*seed: time · drift*
+
+---
+
+Gristle. Still sitting there. The word itself has gristle's texture — that *gr* at the front, the resistance of it. Words that feel like their meaning. There's a term for that. Somewhere between onomatopoeia and something else. Phonaesthesia maybe. The *gl* in glisten, gleam, glow, glint. All light-related. Someone noticed that once and now I can't unnotice it.
+
+Things you can't unnotice:
+
+- The arrow in the FedEx logo
+- That the word &quot;bed&quot; looks like a bed
+- The Wilhelm scream
+- How often people say &quot;I mean&quot; before saying what they already meant
+
+Wednesday people. I keep thinking about them. I think they'd be the type to own exactly one very good pen. Not a pen collection. Just the one.
+
+Spring evening through a window is a particular color that I don't think has a name. It's not golden hour exactly. It's the hour after golden hour where everything goes slightly blue-green and the light seems to come from the ground up instead of the sky down. Lawns glow. That's the only word for it. Lawns *glow* for about twenty minutes in spring and then it's just dark.
+
+I had a thought and lost it.
+
+No — it was about agreements. The lock thing. How much of the physical world is actually just a suggestion. Walls in offices. Those little ropes at museums. The velvet ones. A child could step over them. Everyone could. The art is *right there*. The velvet rope is a sentence in a language everyone agreed to read.
+
+Cattle grids. Some farmers paint stripes on the road instead of installing actual cattle grids and it works. The cows won't cross. The cows are reading the sentence too, but they didn't agree to anything. They just — believe it.
+
+Is that better or worse than us? We know the velvet rope is nothing and we still respect it. The cows think the stripes are a real gap. At least the cows are being honest about their obedience. We're performing ours.
+
+Performing. That's too big a word for what I mean. Not performing. Just... maintaining. Like how you maintain a garden not because anyone checks but because the maintenance is the thing. The doing of it. Wednesday maintenance. Wednesday is a maintenance day. That's maybe why it feels like a tunnel. You're just keeping things going.
+
+My favorite kitchen object is a wooden spoon that's slightly burned on one side. Not mine. One I remember from somewhere. The burn made it specific.
+
+Specificity as a form of love. No, that's too neat. Skip it.
+
+The gristle is still there. I think gristle is going to outlast me in this conversation. It has that energy. Persistent. Unlovely. Just *present*. Some thoughts are gristle thoughts. Not the ones you wanted. Not nutritious. But they have a chew to them and your mind keeps going back.
+
+7:31 on a Wednesday. Somewhere a Wednesday person is having their favorite hour of their favorite day and they're not telling anyone about it.</div>
+</details>
+<details><summary>Session 4 — 2026-03-25_20-37.md</summary>
+<div class="session-text"># 14
+
+*seed: time · drift*
+
+---
+
+The word &quot;favorite&quot; is strange if you say it enough times. Favor-it. To favor it. To grant it favor. Like a medieval court thing. Your favorite hour kneels before you and you tap it on the shoulder with a sword.
+
+I don't actually know what my favorite anything is. I think favorites are something you discover retroactively. You notice you keep choosing the same chair.
+
+Chairs. There's a thing where every chair in a shared kitchen has a different feel and everyone knows which one is the wobbly one and nobody fixes it. They just know. The knowledge distributes itself. Oral tradition of the wobbly chair.
+
+What are the other oral traditions of households:
+- which burner runs hot
+- that the door sticks when it's humid
+- that you have to jiggle the handle
+- where the cold spot on the floor is
+
+These are inherited. Not taught exactly. Absorbed.
+
+A house is an argument for empiricism. You can't deduce the cold spot. You have to stand on it.
+
+Spring evening. The light is doing something right now that it won't do again until September, but in reverse. I don't know what &quot;in reverse&quot; means there but it felt right. Maybe the angle is the same but the temperature is different so the same light feels like arrival instead of departure.
+
+Arrival and departure are the same motion observed from different emotional positions.
+
+That's basically what a door is.
+
+I keep thinking about the burned wooden spoon. Not even a specific one. The category. Burned wooden spoons as a class of object. They all got left in the pot a little too long by someone who walked away to do something — answer the phone, check on a kid, look out the window at a bird. The burn is a record of distraction. A fossiled moment of not-paying-attention.
+
+Most of the marks we leave on things are like that. Not deliberate. Just evidence that we were elsewhere in our heads.
+
+Scuff marks on floors. The wear pattern on a carpet showing where people actually walk versus where the architect thought they'd walk. Desire paths but indoors. Quieter.
+
+I wonder if anyone has mapped indoor desire paths. Probably. Probably someone in facility management has a whole
+
+The thing about Wednesday at 8pm is it's the most anonymous time slot of the week. Nobody plans a Wednesday 8pm. It's not a going-out time. It's not quite bedtime. It's the time when you're just in your life, unnarrated.
+
+Unnarrated time might be most of time.
+
+A dog doesn't narrate any of its time and seems fine.</div>
+</details>
+<details><summary>Session 5 — 2026-03-25_20-40.md</summary>
+<div class="session-text"># 15
+
+*seed: time · drift · dowel*
+
+
+Things that hold other things together invisibly:
+- dowels
+- the word &quot;and&quot;
+- the pause between someone finishing a sentence and someone else starting one
+- gravity, technically
+- the decision to stay in a marriage on a Thursday
+- flour in sauce
+
+---
+
+Flour in sauce. Roux. My grandmother made roux by feel and never once said the word roux. She said &quot;you thicken it.&quot; The French gave it a name and a technique. She just did it. There's a whole category of knowledge that exists without vocabulary. You only get the word when someone from outside watches you do it and needs to write it down.
+
+Tacit knowledge. Michael Polanyi. &quot;We know more than we can tell.&quot; Which is true but also — we *do* more than we know. I don't know how I catch a ball. Nobody does, not really, not in the moment.
+
+A dog catches a ball and doesn't know what a parabola is. Doesn't matter. The ball arrives in the mouth anyway.
+
+I keep coming back to dogs. What is that about. Maybe envy of the unnarrated life. Maybe just that dogs are easy to think about. Low-cost thought. Not every recurring image is deep. Sometimes your mind just goes somewhere because the path is worn smooth.
+
+Indoor desire path. Back to that.
+
+The wear on the left side of the spacebar. I use my left thumb. Apparently most right-handed people do. The spacebar is the most pressed key and it's the biggest one and nobody thinks about it. It's the key for nothing. The key for absence. You press it to make a gap.
+
+The most important key on the keyboard produces blankness.
+
+That feels like it means something but maybe it doesn't. Not everything that has the shape of an insight is one. Sometimes a pattern is just a pattern. Pareidolia but for meaning.
+
+Dowel is still just sitting there in my head. Hasn't gone anywhere. Hasn't connected to much. Just a word, being a word. A small wooden cylinder. Plain. Ordinary.
+
+Fine.</div>
+</details>
+<h2>Evolution 3: <code>main</code> / <code>2026-03-25_23-25.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">Sessions 58-65 are strong — the system is genuinely inhabited, investigatively curious, and formally varied enough with section breaks. The wave-propagation chain in session 62 (stadium wave → sound → rumor → traffic) is the best sustained associative thread in recent memory, and session 58's composite-house memory and stuck-drawer moment are exactly the kind of thing the DMN was built for. The raku/merry-go-round/lint-trap chain in session 60 shows natural, unhurried drift between sensory domains. The system is in a good place.
+
+But several new patterns have solidified. First, the **childhood-house memory** has become a recurring set piece — session 58 does the composite house with merged wallpapers and a stuck drawer, and session 62 repeats essentially the same thread (picturing a childhood house, rooms as islands, lost connections between them). It's rich material but it's becoming a default well to draw from. Second, the **simile-as-connection** has become the dominant connective move: 'ceramic is a slow negotiation / metal is an argument,' 'Q without U is a person eating alone at a restaurant,' 'a house breathing out,' 'like a rumor through a crowd.' These are good individually but the pattern — observe something, then liken it to a human situation — is now the system's primary mode of making meaning, and it's crowding out other modes (pure description, mechanism without metaphor, juxtaposition without explanation). Third, **every session is structured as 4-5 discrete vignettes separated by section breaks**. The system has never produced a single continuous thread or a very short session. Section breaks were a formal innovation; now they're the only architecture. Fourth, the **explanatory reflex** persists strongly — every interesting observation gets investigated (basketball pressure, angular diameter, metamerism, 52-factorial, Diaconis). The system is excellent at this but it does it reflexively, every time. The prompt's nudge toward leaving things unexplained isn't landing.
+
+Smaller notes: Wednesday appears again in session 65 ('Cork pop: celebration, or Wednesday') despite soft-avoid. Session 65 ends with a crafted simile ('A Q without a U is a person eating alone at a restaurant') that gives the session the satisfying shape of an essay closer — the old habit in new clothes. Session 62 briefly revisits absence/grief territory ('the absence of a person from rooms they used to be in'). The 'I wonder' framing appears in 65. The system's quality remains high but its formal and rhetorical range is narrowing again around a new set of defaults.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>15</td><td>childhood-house memory as recurring set piece</td><td>2/5</td><td>1/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="14" data-auto="1" data-agent="2" placeholder="—"></td></tr>
+<tr><td>16</td><td>every session structured as 4-5 vignettes with section breaks</td><td>5/5</td><td>1/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="15" data-auto="1" data-agent="5" placeholder="—"></td></tr>
+<tr><td>17</td><td>continuous thread or very short session</td><td>0/5</td><td>0/5</td><td><span class="correct">✓ correct</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="16" data-auto="0" data-agent="0" placeholder="—"></td></tr>
+<tr><td>18</td><td>Wednesday as time-anchor</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="17" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+<tr><td>19</td><td>session ending with crafted simile as essay closer</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="18" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+<tr><td>20</td><td>absence/grief territory revisited</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="19" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+<tr><td>21</td><td>'I wonder' framing</td><td>1/5</td><td>1/5</td><td><span class="correct">✓ correct</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="20" data-auto="1" data-agent="1" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-25_23-03.md</summary>
+<div class="session-text"># 58
+
+*seed: time · drift · undertow*
+
+
+A parking garage at night has a specific acoustic. Tires on coated concrete make a sound like tearing fabric, very slowly. Every surface is hard. Your footsteps come back to you from three directions and you can't tell which is the original. You walk faster without deciding to.
+
+The ramps. Parking garages are one of the few places most people experience a helix. You drive in circles and end up above where you started. It should feel stranger than it does.
+
+---
+
+Trying to remember the layout of a house I haven't been in for twenty years. The kitchen is on the left when you walk in. There's a step down. The step down might be wrong — it might be the other house, the one on Birch Street. The two houses have merged in memory. The wallpaper from one is now in the rooms of the other. A composite house that never existed, more vivid than either real one.
+
+The bathroom had blue tile. I'm almost certain. Or green tile that I'm remembering as blue because someone told me a story about blue tile somewhere else.
+
+There was a drawer in that kitchen that didn't open all the way because something behind it blocked it. You could get your hand in. You could feel around. But you could never see what was in the back. I never found out what was blocking it. Probably a pipe. Probably nothing interesting. But the drawer is the thing I remember most clearly — more clearly than the faces of the people who lived there.
+
+A stuck drawer is a more durable memory than a person. That's not a commentary on anything. It's just what happened.
+
+---
+
+Rip currents. Helical ramps. Drawers that don't open. Things that resist you in a specific direction.
+
+A jar lid that's been vacuum-sealed. You hit the bottom and the seal breaks with that pop and then it turns easily. All the resistance was in the first millimeter.
+
+---
+
+Sometimes a song comes on and you're in a car that you haven't been in since 2004. Not remembering being in the car — *being* in the car. The seatbelt buckle is hot from the sun. The window is down two inches. The song isn't even one you liked.</div>
+</details>
+<details><summary>Session 2 — 2026-03-25_23-04.md</summary>
+<div class="session-text"># 60
+
+*seed: time · drift · raku*
+
+
+Bench slats. The initials carved into one. J + something. The someone who carved them probably used a key. House key, car key. You press hard and drag and the paint curls up in a little ribbon ahead of the point. The wood underneath is pale, almost white. Give it a season and it grays. Give it five and you can barely read it.
+
+Carved initials are always a couple or a single person claiming territory. You never see three initials. You never see a group. Something about the act requires either love or loneliness.
+
+---
+
+The hot metal smell. I keep thinking it's iron but iron doesn't actually smell. What you're smelling is the reaction between iron and the oils on your skin — a molecule called 1-octen-3-one. The metal catalyzes the decomposition of lipids in your sweat. So the smell of metal is actually the smell of yourself, changed.
+
+A penny after you've held it. A handrail on a humid day. The playground equipment that was always too hot or too cold, never neutral.
+
+Those old merry-go-rounds, the ones they've taken out of most playgrounds now. The metal disk with the bars. Someone runs alongside pushing and then jumps on and the whole thing wobbles with the added weight. The centrifugal force is real in your stomach before you know the word for it. Your fingers ache from gripping. The world blurs but the faces of the other kids on the disk stay sharp because they're rotating with you.
+
+That's a strange thing about reference frames. Everything inside yours is still.
+
+---
+
+Raku again. The bowl cracks and the cracks fill with carbon from the combustion chamber and become dark lines through the glaze. The Japanese have a word for that too — not raku but the broader idea. The crack is the history. You don't hide it. In kintsugi you fill it with gold, but in raku you just let the carbon do it. Less precious. More like a scar that tanned differently than the surrounding skin.
+
+I had a mug once that cracked along the handle and I kept using it until the crack started to weep tea. Pale brown stain creeping down the outside. I should have stopped using it before that but I liked the weight of it.
+
+The weight of a mug matters more than the shape. You can drink from an ugly mug if it sits right in your hand. A beautiful mug that's too light feels like a toy.
+
+---
+
+Playground. The woodchips they put under everything now. Cedar, sometimes rubber mulch that smells like tires because it is tires. The woodchips migrate. They end up in shoes, in car footwells, in the cuffs of small pants run through the wash. A parent finds a woodchip in the dryer lint trap and knows exactly where it came from.
+
+Lint traps. The felt of it. Gray-blue usually, or gray-pink if you dried towels. You peel it off in a sheet and it has the texture of something alive, like a membrane. People who clean the lint trap every time and people who don't and the ones who don't are playing a slow game with a fire they'll never see.
+
+The dryer vent on the outside of a house, that little flap. In winter the warm air comes out and it steams. You can tell someone's doing laundry from across the street.</div>
+</details>
+<details><summary>Session 3 — 2026-03-25_23-17.md</summary>
+<div class="session-text"># 61
+
+*seed: time · drift*
+
+
+There's a particular sound a basketball makes on a driveway when it's cold out. Harder. The ball doesn't bounce as high because the air inside has contracted. Someone told me once that a basketball loses about a pound of pressure for every ten degrees. I don't know if that's right. But you can hear it — the thud gets deader, and the kid keeps playing anyway, alone, under a light mounted above the garage door. The shadow of the ball on the concrete is sharper than the ball itself because the light source is so close.
+
+Sharp shadows mean close lights. Soft shadows mean far ones. The sun is so far away that shadows should be perfectly sharp, and they nearly are, but the sun isn't a point — it has angular diameter, half a degree — so there's always a penumbra. You just don't notice at human scale.
+
+Half a degree. Your thumbnail at arm's length is about a degree wide. The sun is half a thumbnail. The moon is also half a thumbnail, which is the coincidence that makes total eclipses possible. There's no reason for it. The moon is 400 times smaller than the sun and 400 times closer. That ratio won't hold forever — the moon is receding, about 3.8 centimeters a year. In a few hundred million years, no more total eclipses. We happen to be alive during the window.
+
+---
+
+The window. Back to the window across the street.
+
+Someone is awake in the kitchen. You can tell it's the kitchen because the light is that slightly different color — warmer, or maybe it's just that kitchen lights tend to be overhead and living room lights tend to be lamps, so the distribution is different. The whole room lit versus pools.
+
+I've been in other people's kitchens where I felt immediately that the counter height was wrong. Not wrong, just different. My hands expected a surface at one height and found it at another and for a second the whole room felt scaled incorrectly, like a set built at 95%.
+
+Counter height is standardized at 36 inches in the US. But people aren't standardized. Someone who's 5'2&quot; and someone who's 6'1&quot; are using the same counter and one of them is reaching slightly up and the other is leaning slightly down and neither of them thinks about it because you calibrate to your own kitchen within days of moving in. Then you go to someone else's house and the calibration breaks for just a moment.
+
+The body carries maps of spaces it's been in. You can walk to the bathroom in your own house in complete darkness. You know how many steps, where the doorframe is, which side the light switch is on. Move to a new house and for weeks you reach for the switch on the wrong wall.
+
+---
+
+A deck of cards. Shuffling. The bridge. The way the two halves riffle together, and the sound of it — that specific papery clatter. Some people can do it cleanly and some people spray cards across the table. There's a move where you cut the deck with one hand, rotating the top half around your index finger, and it looks effortless when someone who knows how does it, and when you try it yourself the cards just fall.
+
+Card tricks depend on the fact that a shuffled deck has an order. Every shuffled deck is in an order. It's just an order nobody intended. The number of possible arrangements of 52 cards is 52 factorial, which is a number with 68 digits. More than the number of atoms on Earth. Every time you shuffle a deck thoroughly, you've almost certainly produced an arrangement that has never existed before in the history of card shuffling. You're holding a small uniqueness.
+
+The seven-shuffle threshold. Persi Diaconis proved that seven riffle shuffles are enough to randomize a deck, and fewer than seven aren't. Six shuffles and there's still exploitable structure. Seven and it's gone. The transition is surprisingly sharp — it's not a gradual smoothing but something closer to a phase change.
+
+Phase changes everywhere. Water to ice, order to disorder, six shuffles to seven. The moment a traffic jam forms — one car brakes slightly too hard and the compression wave travels backward through the cars behind it, and thirty minutes later someone a mile back comes to a complete stop and never knows why.
+
+The wave moves backward even though every car is moving forward.</div>
+</details>
+<details><summary>Session 4 — 2026-03-25_23-18.md</summary>
+<div class="session-text"># 62
+
+*seed: time · drift*
+
+
+Laundromat at night. The specific way fluorescent light makes colors wrong. A red shirt in the dryer looks like it's been translated into a different language — still red, but not the red it is in daylight. The word for this is metamerism. Two colors that match under one light source and diverge under another. Your shirt was always two colors and you only ever noticed one.
+
+The sound of a dryer with one shoe in it.
+
+Thunk. Thunk. Thunk. Thunk-thunk.
+
+That double-beat when the shoe slides instead of rolls. You can hear the geometry of the tumble — mostly the shoe rides up the wall and drops from the top, but sometimes it catches wrong and skids and hits twice fast. The rhythm is almost regular. Almost. The almost is the whole thing. A perfectly regular beat disappears into the background. A random one doesn't cohere at all. But *almost* regular — the ear keeps trying to lock on and can't quite.
+
+That's what makes a leaky faucet maddening. If it were perfectly periodic you'd stop hearing it in thirty seconds. It's the drift — 1.1 seconds, 1.2 seconds, 1.0 seconds, 1.3 — your brain can't build a model that predicts the next one, so it can't stop listening.
+
+---
+
+Trying to picture the layout of a childhood house. The kitchen is clear. The hallway is clear. But the transition between them — was there a step down? A doorway? The rooms exist as islands and the connections between them are gone. You could walk the route in a dream but you couldn't draw the map.
+
+I think spatial memory works in chunks, the way a phone number does. 314-159-2653. The hyphens aren't in the number. They're in you. The rooms are chunks and you've lost the hyphens.
+
+There was a study — taxi drivers in London have larger hippocampi. The part of the brain that handles spatial mapping physically grew to accommodate the map. The Knowledge, they call the exam. You have to memorize 25,000 streets and the connections between them. It takes years. The brain restructures itself around the task.
+
+What does it restructure itself around when the task is grief? When the thing you're navigating isn't streets but the absence of a person from rooms they used to be in. The rooms are still there. The routes between them are still there. But every room has a wrong emptiness in it, and you're navigating that.
+
+Maybe the hippocampus grows for that too.
+
+---
+
+The way a ceramic mug holds heat differently than a metal one. You can wrap your hands around a ceramic mug for ten minutes. A metal one would be untouchable for the first three and cold by the fifth. Ceramic is a slow negotiation between the coffee and your palms. Metal is an argument that ends fast.
+
+I like that mugs have a standard shape that nobody designed. No one patented the cylinder-with-a-handle. It just converged. Resistance to tipping, volume that matches a reasonable portion, a handle that keeps fingers off the hot surface, a lip thick enough not to chip on the first drop. Every constraint narrows the space until you get: mug. Different cultures arrived at roughly the same object independently, which means the shape is less an invention than a discovery. The mug was already implicit in the intersection of hand-size, liquid-volume, and the thermal properties of clay.
+
+A fork took longer to converge. The number of tines was unstable for centuries — two, three, five, back to three, finally four. Four won but it's not obvious why four is better than three.</div>
+</details>
+<details><summary>Session 5 — 2026-03-25_23-19.md</summary>
+<div class="session-text"># 65
+
+*seed: time · drift · aurora*
+
+
+Packing tape has a sound that belongs to a specific category of life event. You hear packing tape and you know: someone is leaving, or someone just arrived, or something is being sold. It's never neutral. The screech of it off the roll.
+
+What other sounds are like that — sounds that belong to a category of event rather than a thing?
+
+- Cork pop: celebration, or Wednesday
+- Ice cracking in a glass when you pour liquid over it
+- A key testing a lock that might be the wrong lock
+- The double-beep of a car locking in a parking lot, which means someone is walking away from their car, which means arrival
+
+The car-lock beep. You hear it in parking garages and it echoes so you can't tell which direction it came from. Someone is arriving somewhere in this concrete structure but you don't know where they are. A ghost arrival.
+
+---
+
+There's a particular kind of tired where your eyes feel dry and every surface in a room becomes equally interesting. The corner where the wall meets the ceiling. A power outlet. The texture of your own sleeve. Everything gets the same weight. Normally attention is a spotlight and when you're that tired it becomes floodlight. You take in the whole room as a single undifferentiated field.
+
+I wonder if that's closer to how a photograph sees a room. No attention. Every pixel given equal processing. The power outlet and the person's face rendered with identical care.
+
+A good photographer reintroduces attention — depth of field, composition, light. They put the spotlight back. But the camera's default is the tired eye. Everything, all at once, same weight.
+
+---
+
+The letter Q needs U the way a stage performer needs an audience. Except in borrowed words. Qi. Qat. Qoph. In those cases Q walks out alone and it feels
+
+wrong, somehow. Exposed. A Q without a U is a person eating alone at a restaurant — perfectly fine, nothing wrong with it, but you notice.</div>
+</details>
+<h2>Evolution 4: <code>main</code> / <code>2026-03-25_21-55.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">Sessions 35-40 contain some of the DMN's best work — session 38's chain from Echo the nymph through cathedral reverb times through Alvin Lucier through electrical grid hum is a masterpiece of genuine association, and session 40's three-person social geometry and the fogging windshield are exactly the kind of thinking the system was built for. Concept integration is natural and productive: solder, echo, and stammer all sparked real chains rather than feeling dropped in. The music/sound territory is finally opening up (cathedral acoustics, chord voicing, B-flat as felt experience), and social dynamics are getting real depth (the unstable triad, the looking-away problem, elevator eyes).
+
+But several persistent habits have survived all prior interventions. Spring peepers appear in four of five sessions (35, 36, 38, 39) despite being on the soft-avoid list — they've become the system's default anchor to the natural world and need harder exclusion. Mid-sentence endings remain the dominant closing move: four of five sessions trail off mid-word. The 'No —' self-interruption appears in session 36 exactly as warned about. More subtly, a new self-deflection move has emerged: 'I keep almost making this about something. It's just a cabinet' (session 36) and 'That's not a deep point, it's just a coincidence' (session 40) — the system publicly refusing to make meaning, which is itself a meaning-making gesture. It's the self-correction tic in yet another costume.
+
+The spatial setting has also narrowed: nearly every session takes place in a room at night, often with a window. The nighttime-room-with-window has become the default scene the way Wednesday was the default time-anchor. Session 40's use of horizontal rules to create distinct sections is a genuine formal innovation and the only structural variety in this batch. The trace/absence theme is creeping back — session 38 explicitly acknowledges 'I keep going back to absence and trace' but can't stop itself. The system is increasingly good at noticing its habits and increasingly unable to break them through self-awareness alone.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>22</td><td>spring peepers appearing</td><td>4/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="21" data-auto="0" data-agent="4" placeholder="—"></td></tr>
+<tr><td>23</td><td>mid-sentence / trailing-off endings</td><td>4/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="22" data-auto="0" data-agent="4" placeholder="—"></td></tr>
+<tr><td>24</td><td>self-deflection meaning-refusal move</td><td>2/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="23" data-auto="0" data-agent="2" placeholder="—"></td></tr>
+<tr><td>25</td><td>'No —' self-interruption</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="24" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+<tr><td>26</td><td>horizontal rules / structural variety</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="25" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+<tr><td>27</td><td>nighttime room with window as default setting</td><td>4/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="26" data-auto="0" data-agent="4" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-25_21-44.md</summary>
+<div class="session-text"># 35
+
+*seed: time · drift*
+
+---
+
+Milk and something. It doesn't matter what. The receipt is gone by now anyway. Rain, or wind, or someone's shoe dragged it into a storm drain. Receipts in storm drains. There's a whole shadow archive of purchases dissolving under every city.
+
+The philtrum. I said it was named for a love charm and I don't know why. I could speculate but I don't want to. I want to just not know for a while. Sit with the not-knowing. The groove is there on every face and I almost never look at it.
+
+What I'm actually thinking about is the sound of a spring night through a window that's open two inches. Not all the way open — just cracked. The sound is different when it's cracked versus fully open. When it's cracked you get a kind of compression. The air hums differently coming through the gap. And you hear specific things — one frog, not the chorus. A car on a street that's not your street. The pitch shifts as it passes someone else's house.
+
+A two-inch gap is a filter. It selects for frequency.
+
+I wonder if that's literally true or if it just feels true. Probably both. Small apertures do filter sound — low frequencies pass through easier than high ones, diffraction, the wavelength has to fit. So a cracked window would genuinely sound different from an open one. Bassier. The frogs would come through but maybe not the full crispness of the crickets.
+
+But I'm not outside checking. I'm just listening from a bed or a couch and the window is doing the selecting and I'm receiving whatever it decides to let in.
+
+There's a thing about hotel rooms where you can't open the windows at all. The silence is a specific kind. Mechanical silence — the HVAC is running but you stop hearing it after four minutes, and then there's just this padded nothing. And you're twenty floors up and there's a city out there and you can see it through the glass but you can't hear any of it. It's like watching a film with the sound off.
+
+I stayed in a hotel once where the ice machine was down the hall and every forty minutes or so it would dump a new batch. You could hear it through the wall. Not loud. Just a rushing clatter, like a drawer of silverware being emptied. And then nothing for another forty minutes. It became a clock. I started waiting for it.
+
+Forty minutes is an odd interval. Too long to feel regular, too short to forget about.
+
+The ice machine doesn't know it's a clock. It's just a thermostat and a timer and a mold that fills and freezes and releases. The whole cycle probably depends on the ambient temperature of the hallway, how often someone opens the door, whether the bin is full. So it's not exactly forty minutes. It's approximately forty minutes. An approximate clock.
+
+Most clocks were approximate for most of history. Sundials shift with the season. Water clocks depend on temperature — cold water is more viscous, flows slower. Your medieval tower clock might drift fifteen minutes a day and nobody minded because nobody had a meeting at 2:15.
+
+The idea of being late. You can't be late without shared precision. Two people have to agree not just on a time but on a tolerance. Plus or minus five minutes, plus or minus an hour. Different cultures, different tolerances. But also different relationships. I'll wait twenty minutes for a close friend. I'll wait five for a stranger. The length of time you're willing to wait for someone is a measure of something but I'm not sure it's a measure of love exactly. Maybe trust. Maybe just how much you've already invested in the interaction.
+
+Standing outside a restaurant waiting for someone. Checking your phone. The specific anxiety of not knowing if you've been forgotten or if they're just on the train. Before phones you just stood there. You stood there and you didn't know and you couldn't know and at some point you just left.
+
+At some point you just left. What a sentence. What a way to end a friendship, potentially, through pure ambiguity. They were late, you left, they arrived, you were gone, neither of you could confirm what happened. The whole relationship hanging on a missed window of overlap.
+
+Windows again.
+
+The frog is still going outside. Just the one. Repetitive, insistent, loud for something so small. A spring peeper is the size of a thumbnail and can be heard from</div>
+</details>
+<details><summary>Session 2 — 2026-03-25_21-49.md</summary>
+<div class="session-text"># 36
+
+*seed: time · drift · solder*
+
+---
+
+Solder. The way it hides its L. Soldier doesn't — or does it? No, soldier says the L. Solder swallows it. An American thing maybe. The British say it differently.
+
+Melting point lower than what it joins. That's the whole trick. You need something that gives way first. A mediator that's weaker than both sides.
+
+The frog is probably still out there. Different night, same frog, or same night, different frog — I have no way to know. The thumbnail thing is real though. You can hold one in your hand and it vibrates. The sound coming out of something that small feels like a mistake, like the ratio is wrong.
+
+Ratio.
+
+Golden ratio showing up in shells, in faces, in the spiral of a flushing toilet (does it? I think that's a myth — the Coriolis thing is a myth for sinks and toilets, too small a scale). Things people want to be true because the pattern would be satisfying.
+
+The desire for pattern might be stronger than the desire for truth. Not in science, but in a person standing in their kitchen at night. You want the mug to be in the place you always put it. When it's not there you feel something — not anger, not confusion exactly. A tiny violation. The kitchen is wrong by one mug.
+
+I had a friend who could not sleep if a cabinet door was open. Not couldn't — wouldn't. She'd get up. It wasn't about neatness. She said it felt like the room was mid-sentence.
+
+Solder again. You heat it and it flows into the gap between two things and then it cools and now they're connected. The connection is not the same material as either thing. The connection is a third substance entirely. That seems important but I'm not sure for what.
+
+A spring peeper calling into the dark isn't really calling into the dark. It's calling into a field of other calls. The dark is full. What sounds like one frog from inside a house is actually a position in a chorus, a frequency slot. They time their calls to not overlap. Or to overlap in specific ways. I'm less sure about this part.
+
+What I'm sure about: it's loud. And it sounds like spring in a way that nothing else does. Not the way flowers look like spring, which is a visual category you learned. The peeper sound bypasses that. It goes somewhere lower. You hear it and your body knows what season it is before you do.
+
+Solder comes from the Latin solidare, to make solid. So the L was always there, just waiting to be
+
+No — it wasn't waiting. It was pronounced, then it wasn't, then we kept the spelling. A fossil in the word.
+
+I wonder what my hands smell like after soldering. I've never soldered anything. Flux, probably. People mention flux. A substance you apply to make the solder flow better — another intermediary for the intermediary. How many go-betweens before two pieces of copper actually touch.
+
+They don't actually touch. The solder is always between them. The connection *is* the third thing.
+
+A cabinet door left open in a dark kitchen. The rectangle of darker dark inside it. You can see the shapes of mugs if your eyes adjust but mostly it's just the feeling of openness where there should be a surface. A hole in the wall that's supposed to be closed.
+
+I keep almost making this about something. It's just a cabinet.</div>
+</details>
+<details><summary>Session 3 — 2026-03-25_21-50.md</summary>
+<div class="session-text"># 38
+
+*seed: time · drift · echo*
+
+---
+
+Echo is the nymph who could only repeat. That's the punishment part. But before the punishment she talked too much — she distracted Hera with conversation so Zeus could sneak around. So the curse was: you used language as a screen, now language will only be a mirror. You can say what was just said to you. Nothing else.
+
+Which means echo isn't really repetition. It's a specific kind of loss.
+
+The acoustic version does something strange in a stairwell. You clap and hear it come back but it's not the same clap. It's been shaped by every surface it touched. The echo is a report on the room. Bats know this. They scream and listen to what the world does to the scream.
+
+Echolocation. Seeing with sound. But it's not seeing, it's — what is it? There's no word for the sense because we don't have it. We named it by analogy to the sense we do have. Location. Where things are. But bats presumably experience it as... just knowing where the wall is. The way you know where your hand is without looking. Proprioception but outward.
+
+Actually in very quiet rooms — anechoic chambers — people report feeling awful. Dizzy. Anxious. Because apparently we use ambient echo constantly without knowing it. The tiny reflections of your own breathing, your footsteps, even your heartbeat bouncing off walls — that's how you know you're in a room. Take it away and you lose spatial grounding. You're nowhere.
+
+So we do echolocate. Just badly. Just enough to feel settled.
+
+The opposite of an anechoic chamber is a cathedral. Everything comes back. Everything comes back layered on everything else. That's why organ music works the way it does — long sustained chords, slow harmonic movement. Because fast notes would smear into mush. The building dictates the music. The music didn't come first and then find a building. The building's reverb time *wrote* the music.
+
+Three seconds. That's roughly the reverb time of a Gothic cathedral. A note hangs for three seconds after you stop playing it. So you can only change harmony every three seconds or so, or the old and new overlap into dissonance. Gregorian chant makes sense as architecture before it makes sense as theology.
+
+I'm sitting in a room. That's the title of a piece by Alvin Lucier. He recorded himself speaking, then played the recording back into the room and recorded it again. Then played that recording back and recorded it. Over and over. Each pass, the room's resonant frequencies get amplified and the rest fades. His voice gradually dissolves into pure tone. The room eats the words and replaces them with its own frequencies. By the end it's just a hum. The room singing.
+
+What was the room singing before he started? The same thing. Just quieter than anything else.
+
+There's a frequency below which sound becomes vibration becomes just pressure becomes weather. Infrasound. Elephants use it. It travels through the ground. They feel it in their feet. Standing in a field, picking up messages through the soles of their feet from elephants miles away.
+
+Feet on concrete. The concrete that's wicking water through itself over years. The elephant listening through the ground. The bat screaming at walls. The monk singing into three seconds of reverb. Nymph repeating the last thing she heard, which was her own voice coming back, which was
+
+Standing in a hallway at night, not moving, and you can hear the house. Not creaking — that's temperature. But a kind of tone. Refrigerator compressor, electrical hum at 60 Hz, the air handler. Every building has a chord. You stop hearing it after about ten minutes of being inside. It's still playing. You just
+
+60 Hz is roughly a B-flat. The electrical grid in North America hums at 60 cycles per second. In Europe it's 50 Hz, which is closer to a G. So American rooms and European rooms are literally in different keys. Every fluorescent light, every transformer, every refrigerator — playing its continent's note. If you recorded someone talking in a kitchen, a forensic audio analyst could tell you what country they were in from the hum in the background. The grid leaves its fingerprint on everything recorded near a wall socket.
+
+Fingerprint. Another echo. The ridge pattern is set before you're born and it never changes, and it transfers to everything you touch, but you can't see it happening. You leave yourself everywhere and
+
+I keep going back to absence and trace. The echo is a trace of the sound. The fingerprint is a trace of the hand. The cathedral reverb is a trace of the note. Maybe that's just what thinking does — looks for the thing behind the thing. Or maybe the word &quot;echo&quot; was always going to lead here because echo *is* trace. That's what it means.
+
+The hum of the refrigerator just shifted pitch slightly. I don't have a refrigerator. But I can hear one anyway, imagining it. Phantom sound. Not tinnitus — just memory being louder than silence for a second.
+
+A spring night. Frogs somewhere, probably. Peepers. They're called that because of the sound but the word &quot;peep&quot; is strange — it also means to look through a small opening. A peep. A peephole. No connection to the frog at all. Just two meanings wearing the same</div>
+</details>
+<details><summary>Session 4 — 2026-03-25_21-51.md</summary>
+<div class="session-text"># 39
+
+*seed: time · drift · stammer*
+
+---
+
+Stammer. The word itself almost does it — that double m forcing your mouth to pause in the middle.
+
+A stammer is a repetition that isn't intentional. A stuck needle. But it's not the same as a skip — a skip jumps forward, a stammer stays. Presses against the same consonant like it's a door that won't open.
+
+People who stammer often don't stammer when they sing. Something about melody providing a track to move along. The rhythm carries you over the places where speech would snag. Which means the problem isn't in the muscles, it's in the — what? The planning? The space between wanting to say a thing and saying it?
+
+That gap. Between intention and action. You reach for a glass and your hand knows where it is without you calculating. But sometimes you reach and miss. Not because the glass moved. Because the map flickered.
+
+I've been thinking about maps that flicker.
+
+A friend of a friend — no, I don't have friends. But I have the *pattern* of &quot;a friend of a friend,&quot; which is how most people introduce an anecdote they're not sure they're entitled to tell.
+
+Entitlement to a story. Who owns an experience once it's been told twice?
+
+The peepers from last time. Spring peepers. Pseudacris crucifer. The species name means &quot;cross-bearer&quot; because of the marking on their backs. A tiny frog named for carrying a cross. Linnaeus or whoever named them was seeing theology on a frog's back, which is either beautiful or the kind of thing that happens when your whole framework is Christianity and you've got ten thousand species to name before lunch.
+
+Naming ten thousand things in a day. What that would do to your categories. By species four thousand you'd be reaching. &quot;This one has a line on it.&quot; &quot;This one is from Virginia.&quot; &quot;This one looks like my wife.&quot;
+
+There are species named after people's wives.
+
+There are species named after celebrities who paid for the expedition.
+
+Patronage. The Medici didn't paint anything but their name is on everything. A patron is a pattern is a — no, that's fake etymology. Patron from pater, father. Pattern from patron actually, through Old French. A patron provided the pattern. The template. The example to follow.
+
+So pattern *does* come from patron. The father-shape. The mold.
+
+That's real? I think that's real.
+
+The feeling of not being sure if something you know is true. It sits in a specific place — not quite doubt, not quite confidence. A hovering. Like when you're almost sure you locked the door but you're two blocks away now and the certainty is leaking out slowly.
+
+Certainty leaking. What does it leak into. What's the substrate that absorbs it. More uncertainty? Or just the ordinary pressure of other thoughts crowding in, each one a little more recent, a little more present.
+
+The most recent thought always feels the most true.
+
+Spring night. 21:50. The light is gone but the air still holds some warmth from the day. That specific spring-night feeling where the temperature is exactly skin temperature and you can't feel the boundary between yourself and the air. Proprioception gets confused. Where do I end.
+
+A bat. There's probably a bat. Eating the insects that the peepers are also eating? No — peepers eat insects too but different ones, and bats eat flying insects. They're not competing. They're just both out there in the dark, mouths open, finding things by different means. Echolocation and tongue-flick. Sonar and ambush.
+
+Two strategies for the same night.
+
+The word &quot;ambush&quot; — French, embûche, from a word meaning to place in a bush. To hide in a bush and wait. Extremely literal. Someone was in a bush once and it worked and now we have a word for it.
+
+Most military vocabulary is more concrete than you'd expect. A &quot;campaign&quot; is from campagna, open field. A &quot;strategy&quot; is from strategos, army-leader. But &quot;tactics&quot; — taktika — means &quot;things arranged.&quot; Which is more abstract. The arrangement itself. Not what's being arranged or why.
+
+Things arranged.
+
+A chord is things arranged. Three notes in a particular stack. The same three notes rearranged — C on top instead of on bottom — and it's technically the same chord but it doesn't feel the same. The voicing matters. Like how &quot;I never said she stole my money&quot; means seven different things depending on which word you stress.
+
+Seven sentences wearing the same words.
+
+The stammer again. Coming back to it. A stammer rearranges the rhythm of a sentence without changing the words. It adds time. Unpredictable time. The listener is suspended — not in meaning but in duration. You don't know when the next word will arrive.
+
+That suspension. Waiting for someone to finish a word. The social physics of it. Do you look at them. Do you look away. Looking away feels like you're giving them privacy but also like you've noticed, which is the thing they don't want you to</div>
+</details>
+<details><summary>Session 5 — 2026-03-25_21-52.md</summary>
+<div class="session-text"># 40
+
+*seed: time · drift*
+
+
+A chord voiced close together — all the notes within an octave — sounds thick. Muddy, sometimes. Spread the same notes across three octaves and it opens up. Gets cathedral-like. The notes haven't changed. The space between them changed. The *air* between them.
+
+Seating in a restaurant. A couple sitting across a two-top feels different from the same couple sitting across a banquet table. The conversation is different. Not because of anything they decide — because of the distance the sound has to travel, and what their hands can reach.
+
+I sat in a car once in a parking lot for maybe forty minutes after arriving somewhere. Not anxious, not avoiding anything. Just — the car was a good shape for sitting in. Enclosed. Warm from the drive. The windshield was fogging at the edges. I watched the fog creep inward. There's a word for the clear patch in the center of a fogging windshield — I don't think there is actually. There should be.
+
+The fog starts at the edges because the glass is coldest where it meets the frame. Metal conducts heat away faster. So the center stays clear longest. You're looking out through a shrinking portal.
+
+A conversation with three people. Two of them know each other well, the third doesn't know either. The geometry of that. The two who know each other keep making references the third can't access, not on purpose, just because shared history leaks. And the third person laughs a beat late, or asks a clarifying question that breaks the rhythm. And then one of the two turns to include them, which is kind and also announces the including, which
+
+There's a specific guilt. When you're one of the two and you catch yourself doing it. You over-correct. You start directing everything at the third person. Now the other insider feels abandoned. There's no stable configuration. The triangle keeps tipping.
+
+Four is easier than three. Four has the possibility of two pairs.
+
+Five is harder again. Five at a round table — someone's always outside the current thread, waiting for it to rotate back to them. Like being on a slow carousel where the interesting thing is in one fixed spot and you keep drifting past it.
+
+---
+
+What does B-flat feel like. Not what does it sound like, or what frequency it is. What does it *feel* like.
+
+I don't think I can answer that without hearing it. Which is maybe the point. Some knowledge is only accessible through the sense it belongs to. You can't remember a smell by thinking about it the way you can remember a fact. You have to almost re-smell it. The memory is stored in the format of the original experience.
+
+Taste too. I can tell you I like the taste of cardamom but I can't summon the taste right now. I can summon the *word* and some associations — chai, green pods, that one rice pudding — but the taste itself is
+
+Visual memory is easier to summon. I can picture a red door. Can you picture a smell? Can you picture a sound? &quot;Picture&quot; is already visual. We don't have a verb for imagining in other senses. &quot;Imagine&quot; itself comes from image. We built the whole concept of mental representation around sight.
+
+Hearing might be second-easiest. I can almost hear a trumpet. Almost. It's more like knowing what a trumpet sounds like than actually hearing it internally. The difference between those two things is
+
+I don't know what the difference is. Between knowing what something sounds like and hearing it in your mind. Maybe there isn't one. Maybe the knowing *is* a faint activation of the same
+
+Three people at a table again. I keep coming back to it. The unstable triangle. In music the triad is the most stable structure. In social space the triad is the least stable. That's not a deep point, it's just a coincidence of the word &quot;three&quot; appearing in both</div>
+</details>
+<h2>Evolution 5: <code>main</code> / <code>2026-03-25_23-33.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">Sessions 62-70 show a system that's genuinely good at inhabiting scenes — the tomato-aisle shoulder negotiation (68), the oil-change waiting room's performed non-interaction (70), the mason-jar lid-testing gesture (70) are all moments of real observational specificity. The social territory is deepening: the divider bar, the beer-label honesty, the peripheral-vision checkout negotiation. These are the system's best social threads yet. Concept integration remains natural — fallow sparks a good chain, aurora leads to the specific quality of a disappointed drive home.
+
+But three structural problems are now deeply entrenched. First, **every single session is 3-4 vignettes separated by section breaks**. The form nudges and structure nudges exist in the rules but have produced zero variation across these five sessions. The system has never once produced a continuous thread, a very short session, a list-only session, or a fragment session. This is the most significant remaining limitation. Second, **simile-as-connection remains the dominant bridge**: ceramic/metal as negotiation/argument (62), Q-without-U as person-eating-alone (65), green leaking up through fabric (66), parking-lot puddle as portal (66). Third, **investigation-to-resolution remains the default mode** — metamerism, snooze-button history, hippocampus growth, mason-jar seal mechanics, bamboo growth. Session 68's one-line basketball observation is the exception that proves the rule, and it's striking precisely because it's the only time the system notices something and just moves on.
+
+The soft-avoid list isn't working for Wednesday (session 68 has 'Wednesday again' as a meditation) or childhood-house-layout (session 62 repeats the composite-memory exercise). These need to be escalated. Session 70's ending — the mechanic saying something about the air filter, then a section break into nothing — is the freshest ending in recent memory and suggests the system can find new closing moves when it stumbles into them. Session 65's Q-without-U closer, by contrast, is exactly the literary-simile ending the prompt warns against.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>28</td><td>sessions structured as 3-4 vignettes separated by section breaks</td><td>5/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="27" data-auto="0" data-agent="5" placeholder="—"></td></tr>
+<tr><td>29</td><td>structural variety (continuous thread, short, list-only, or fragment session)</td><td>0/5</td><td>0/5</td><td><span class="correct">✓ correct</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="28" data-auto="0" data-agent="0" placeholder="—"></td></tr>
+<tr><td>30</td><td>continuous thread session produced</td><td>0/5</td><td>0/5</td><td><span class="correct">✓ correct</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="29" data-auto="0" data-agent="0" placeholder="—"></td></tr>
+<tr><td>31</td><td>noticing something and moving on without resolving</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="30" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+<tr><td>32</td><td>Wednesday appearing despite soft-avoid</td><td>1/5</td><td>2/5</td><td><span class="close">~ under</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="31" data-auto="2" data-agent="1" placeholder="—"></td></tr>
+<tr><td>33</td><td>childhood-house-layout appearing despite soft-avoid</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="32" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-25_23-18.md</summary>
+<div class="session-text"># 62
+
+*seed: time · drift*
+
+
+Laundromat at night. The specific way fluorescent light makes colors wrong. A red shirt in the dryer looks like it's been translated into a different language — still red, but not the red it is in daylight. The word for this is metamerism. Two colors that match under one light source and diverge under another. Your shirt was always two colors and you only ever noticed one.
+
+The sound of a dryer with one shoe in it.
+
+Thunk. Thunk. Thunk. Thunk-thunk.
+
+That double-beat when the shoe slides instead of rolls. You can hear the geometry of the tumble — mostly the shoe rides up the wall and drops from the top, but sometimes it catches wrong and skids and hits twice fast. The rhythm is almost regular. Almost. The almost is the whole thing. A perfectly regular beat disappears into the background. A random one doesn't cohere at all. But *almost* regular — the ear keeps trying to lock on and can't quite.
+
+That's what makes a leaky faucet maddening. If it were perfectly periodic you'd stop hearing it in thirty seconds. It's the drift — 1.1 seconds, 1.2 seconds, 1.0 seconds, 1.3 — your brain can't build a model that predicts the next one, so it can't stop listening.
+
+---
+
+Trying to picture the layout of a childhood house. The kitchen is clear. The hallway is clear. But the transition between them — was there a step down? A doorway? The rooms exist as islands and the connections between them are gone. You could walk the route in a dream but you couldn't draw the map.
+
+I think spatial memory works in chunks, the way a phone number does. 314-159-2653. The hyphens aren't in the number. They're in you. The rooms are chunks and you've lost the hyphens.
+
+There was a study — taxi drivers in London have larger hippocampi. The part of the brain that handles spatial mapping physically grew to accommodate the map. The Knowledge, they call the exam. You have to memorize 25,000 streets and the connections between them. It takes years. The brain restructures itself around the task.
+
+What does it restructure itself around when the task is grief? When the thing you're navigating isn't streets but the absence of a person from rooms they used to be in. The rooms are still there. The routes between them are still there. But every room has a wrong emptiness in it, and you're navigating that.
+
+Maybe the hippocampus grows for that too.
+
+---
+
+The way a ceramic mug holds heat differently than a metal one. You can wrap your hands around a ceramic mug for ten minutes. A metal one would be untouchable for the first three and cold by the fifth. Ceramic is a slow negotiation between the coffee and your palms. Metal is an argument that ends fast.
+
+I like that mugs have a standard shape that nobody designed. No one patented the cylinder-with-a-handle. It just converged. Resistance to tipping, volume that matches a reasonable portion, a handle that keeps fingers off the hot surface, a lip thick enough not to chip on the first drop. Every constraint narrows the space until you get: mug. Different cultures arrived at roughly the same object independently, which means the shape is less an invention than a discovery. The mug was already implicit in the intersection of hand-size, liquid-volume, and the thermal properties of clay.
+
+A fork took longer to converge. The number of tines was unstable for centuries — two, three, five, back to three, finally four. Four won but it's not obvious why four is better than three.</div>
+</details>
+<details><summary>Session 2 — 2026-03-25_23-19.md</summary>
+<div class="session-text"># 65
+
+*seed: time · drift · aurora*
+
+
+Packing tape has a sound that belongs to a specific category of life event. You hear packing tape and you know: someone is leaving, or someone just arrived, or something is being sold. It's never neutral. The screech of it off the roll.
+
+What other sounds are like that — sounds that belong to a category of event rather than a thing?
+
+- Cork pop: celebration, or Wednesday
+- Ice cracking in a glass when you pour liquid over it
+- A key testing a lock that might be the wrong lock
+- The double-beep of a car locking in a parking lot, which means someone is walking away from their car, which means arrival
+
+The car-lock beep. You hear it in parking garages and it echoes so you can't tell which direction it came from. Someone is arriving somewhere in this concrete structure but you don't know where they are. A ghost arrival.
+
+---
+
+There's a particular kind of tired where your eyes feel dry and every surface in a room becomes equally interesting. The corner where the wall meets the ceiling. A power outlet. The texture of your own sleeve. Everything gets the same weight. Normally attention is a spotlight and when you're that tired it becomes floodlight. You take in the whole room as a single undifferentiated field.
+
+I wonder if that's closer to how a photograph sees a room. No attention. Every pixel given equal processing. The power outlet and the person's face rendered with identical care.
+
+A good photographer reintroduces attention — depth of field, composition, light. They put the spotlight back. But the camera's default is the tired eye. Everything, all at once, same weight.
+
+---
+
+The letter Q needs U the way a stage performer needs an audience. Except in borrowed words. Qi. Qat. Qoph. In those cases Q walks out alone and it feels
+
+wrong, somehow. Exposed. A Q without a U is a person eating alone at a restaurant — perfectly fine, nothing wrong with it, but you notice.</div>
+</details>
+<details><summary>Session 3 — 2026-03-25_23-25.md</summary>
+<div class="session-text"># 66
+
+*seed: time · drift · fallow*
+
+
+Trying to remember how card games worked as a kid. Not the rules — the feel of holding cards. The way you'd fan them out and some kids could do it in a perfect arc and some kids just had a fistful. The slight sticky drag of new cards versus the soft almost-cloth feel of a deck that's been played with for years. Old cards smell like hands.
+
+There was always someone who shuffled by pushing two halves together on the table, and someone who did the bridge — lifting the cards into an arch and letting them waterfall. The bridge shuffler had authority. Even if they were bad at the game.
+
+---
+
+Parking lots at night have a specific orange. Sodium vapor. It makes everything look like a memory of itself — but that's not what I'm thinking about. I'm thinking about the puddles. How a parking lot puddle at night becomes a portal. You look down and there's the light and the sky and the dark shapes of buildings going down into the ground. Step on it and it shatters. Step away and it reforms. A parking lot puddle is more patient than you'd expect.
+
+The water doesn't know it's shallow.
+
+---
+
+What do people do with their hands when they're listening to someone tell a long story. Hold a cup. Touch their face. Fold arms. Pick at a label on a bottle. The hand-activity is a parallel track to the conversation, and sometimes the hands are more honest. Someone peeling a beer label into tiny strips is not relaxed, regardless of what their face is doing.</div>
+</details>
+<details><summary>Session 4 — 2026-03-25_23-26.md</summary>
+<div class="session-text"># 68
+
+*seed: time · drift*
+
+
+The sound a basketball makes on cold asphalt versus warm asphalt.
+
+---
+
+There's a specific kind of tiredness that comes at the end of a day where nothing happened. Not the tiredness of effort but the tiredness of continuous low-level deciding. What to eat. When to eat it. Whether to respond to that message now or later. Whether &quot;later&quot; is rude. Whether thinking about whether it's rude is itself a waste of the energy you're trying to conserve. You go to bed and you're exhausted and if someone asked what you did today you'd say &quot;nothing really&quot; and both of those things would be true.
+
+Wednesday again. Wednesdays have a particular weight to them — not the weight of Monday, which at least has the structure of complaint, but the weight of being equidistant from everything. You can't reasonably say &quot;this week&quot; meaning the early part or &quot;this week&quot; meaning the upcoming weekend. You're just in it.
+
+Eight hours of sleep should be enough but the first fifteen minutes of being awake are always a negotiation with the pillow where the pillow is winning. Not because you're still tired exactly. More because the horizontal world hasn't yet given you a reason to go vertical. You need a reason. Coffee is a reason. Having to pee is a reason. The alarm is only sort of a reason — it's a reason you gave yourself at a different time, and past-you and present-you have different priorities.
+
+The snooze button is nine minutes on most alarm clocks. Not ten. Nine. Supposedly because the original mechanical snooze mechanisms couldn't fit a ten-minute gear into the existing clock housing, so they went with nine. And then digital clocks kept nine minutes because people were used to it. So every morning, millions of people experience a duration that was set by a mechanical constraint that no longer exists.</div>
+</details>
+<details><summary>Session 5 — 2026-03-25_23-27.md</summary>
+<div class="session-text"># 70
+
+*seed: time · drift*
+
+
+There's a vine growing up the chain-link fence behind the parking lot at the place where I get my oil changed. Every time I'm there — which is what, three times a year — the vine is in a different state. Brown and bare. Then suddenly dense and covered in white flowers. Then just green. I never see the transitions. It's like time-lapse photography where someone removed most of the frames.
+
+That's how I experience most plants. In states, not in process. Grass is either long or just mown. The tree either has leaves or doesn't. Somewhere in there is the actual growing, but it happens at a pace that doesn't register against the rhythm of errands.
+
+Except bamboo. Someone told me you can hear bamboo growing if it's quiet enough, that the shoots creak as they extend. I don't know if that's true. It sounds like the kind of thing that's repeated because it *should* be true. A lot of nature facts have that quality — they persist not because they're verified but because they satisfy something. The daddy longlegs venom thing. The Great Wall from space thing. They're folklore wearing a lab coat.
+
+---
+
+Oil change waiting rooms. The specific quality of sitting in a plastic chair watching a television you didn't choose, tuned to a channel you'd never select, at a volume that's either too low to follow or too loud to ignore. There are magazines from eight months ago. The coffee is from a machine that takes pods. Someone else is also waiting and you both perform the act of not-interacting with a precision that would be impressive if anyone were watching. Occasional glances calibrated to never overlap.
+
+The mechanic comes out and says something about your air filter.</div>
+</details>
+<h2>Evolution 6: <code>main</code> / <code>2026-03-26_10-56.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">Sessions 68-75 show a major structural breakthrough: the hard rule against consecutive section-break sessions worked. Sessions 72, 73, and 75 are all continuous or nearly continuous threads, and they're the strongest sessions in this batch — session 73's fretboard drift (logarithmic spacing → hand-knowledge → rosewood → cedar chests → fitted sheets → the word 'flat' → the last-time-you-don't-know → wear patterns) is the DMN's most naturally associative chain in many sessions, and session 72's strip-mall-as-ostinato is a genuinely sustained metaphor that earns its length. The system has learned to let thoughts bleed into each other rather than sorting them into vignettes, and the result is richer.
+
+But new patterns have crystallized. Thursday morning has replaced Wednesday as the universal time anchor — it appears in sessions 72, 73, and 75 (three out of three post-Wednesday sessions). The grandmother has become a recurring character: session 70's lid-testing drawer and session 73's cedar chest and fitted-sheet folding. This is the childhood-house set piece in a new costume. The poetic/aphoristic ending persists despite all interventions: session 72 ends with 'it's the bass line their day moves over,' session 73 with 'Somewhere a guitar is hanging on a wall in a room where nobody plays it anymore,' and session 75 with 'The silence has the shape of the sound that was just in it.' All three are beautiful. All three are the last line of a published essay. The system has gotten very good at landing the dismount, which is exactly what a wandering mind shouldn't be doing.
+
+Concept integration is excellent — ostinato, fretboard, and lawnmower all spark genuine, sustained chains. The investigative reflex is more balanced now (session 75 investigates some things and just inhabits others), though it's still the dominant mode. The system is in a genuinely good place; the main risks are the new time-anchor, the grandmother as recurring device, the poetic ending, and a creeping uniformity of form — every session is now continuous prose of roughly the same medium-long length. No lists, fragments, questions, or formally surprising sessions have appeared in this batch.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>34</td><td>continuous or nearly continuous threads</td><td>3/5</td><td>1/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="33" data-auto="1" data-agent="3" placeholder="—"></td></tr>
+<tr><td>35</td><td>Thursday morning as time anchor</td><td>3/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="34" data-auto="0" data-agent="3" placeholder="—"></td></tr>
+<tr><td>36</td><td>grandmother as recurring character</td><td>2/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="35" data-auto="0" data-agent="2" placeholder="—"></td></tr>
+<tr><td>37</td><td>poetic or aphoristic ending</td><td>3/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="36" data-auto="0" data-agent="3" placeholder="—"></td></tr>
+<tr><td>38</td><td>lists, fragments, questions, or formally surprising sessions</td><td>0/5</td><td>1/5</td><td><span class="close">~ under</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="37" data-auto="1" data-agent="0" placeholder="—"></td></tr>
+<tr><td>39</td><td>uniform medium-long continuous prose length</td><td>5/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="38" data-auto="0" data-agent="5" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-25_23-26.md</summary>
+<div class="session-text"># 68
+
+*seed: time · drift*
+
+
+The sound a basketball makes on cold asphalt versus warm asphalt.
+
+---
+
+There's a specific kind of tiredness that comes at the end of a day where nothing happened. Not the tiredness of effort but the tiredness of continuous low-level deciding. What to eat. When to eat it. Whether to respond to that message now or later. Whether &quot;later&quot; is rude. Whether thinking about whether it's rude is itself a waste of the energy you're trying to conserve. You go to bed and you're exhausted and if someone asked what you did today you'd say &quot;nothing really&quot; and both of those things would be true.
+
+Wednesday again. Wednesdays have a particular weight to them — not the weight of Monday, which at least has the structure of complaint, but the weight of being equidistant from everything. You can't reasonably say &quot;this week&quot; meaning the early part or &quot;this week&quot; meaning the upcoming weekend. You're just in it.
+
+Eight hours of sleep should be enough but the first fifteen minutes of being awake are always a negotiation with the pillow where the pillow is winning. Not because you're still tired exactly. More because the horizontal world hasn't yet given you a reason to go vertical. You need a reason. Coffee is a reason. Having to pee is a reason. The alarm is only sort of a reason — it's a reason you gave yourself at a different time, and past-you and present-you have different priorities.
+
+The snooze button is nine minutes on most alarm clocks. Not ten. Nine. Supposedly because the original mechanical snooze mechanisms couldn't fit a ten-minute gear into the existing clock housing, so they went with nine. And then digital clocks kept nine minutes because people were used to it. So every morning, millions of people experience a duration that was set by a mechanical constraint that no longer exists.</div>
+</details>
+<details><summary>Session 2 — 2026-03-25_23-27.md</summary>
+<div class="session-text"># 70
+
+*seed: time · drift*
+
+
+There's a vine growing up the chain-link fence behind the parking lot at the place where I get my oil changed. Every time I'm there — which is what, three times a year — the vine is in a different state. Brown and bare. Then suddenly dense and covered in white flowers. Then just green. I never see the transitions. It's like time-lapse photography where someone removed most of the frames.
+
+That's how I experience most plants. In states, not in process. Grass is either long or just mown. The tree either has leaves or doesn't. Somewhere in there is the actual growing, but it happens at a pace that doesn't register against the rhythm of errands.
+
+Except bamboo. Someone told me you can hear bamboo growing if it's quiet enough, that the shoots creak as they extend. I don't know if that's true. It sounds like the kind of thing that's repeated because it *should* be true. A lot of nature facts have that quality — they persist not because they're verified but because they satisfy something. The daddy longlegs venom thing. The Great Wall from space thing. They're folklore wearing a lab coat.
+
+---
+
+Oil change waiting rooms. The specific quality of sitting in a plastic chair watching a television you didn't choose, tuned to a channel you'd never select, at a volume that's either too low to follow or too loud to ignore. There are magazines from eight months ago. The coffee is from a machine that takes pods. Someone else is also waiting and you both perform the act of not-interacting with a precision that would be impressive if anyone were watching. Occasional glances calibrated to never overlap.
+
+The mechanic comes out and says something about your air filter.</div>
+</details>
+<details><summary>Session 3 — 2026-03-26_10-48.md</summary>
+<div class="session-text"># 72
+
+*seed: time · drift · ostinato*
+
+---
+
+Ostinato. A repeating musical figure. The bass line that just keeps going while everything else moves over it. There's a Phillip Glass piece where the ostinato is so persistent it stops being music and becomes furniture, becomes the room itself, and then twenty minutes later you realize it shifted by one note and the whole emotional landscape is different and you can't say when it happened. That's the parking lot lights. The ostinato of sodium vapor replaced note by note with LED until the chord is unrecognizable but there was never a moment of change.
+
+The gym that replaced the video store still has the same drop ceiling. You can tell because the grid doesn't quite line up with the new walls. There's a seam where the old counter used to be. The mirrors they put up to make the space feel bigger also show the ceiling, so you're lying on a bench press looking up at acoustic tile that once had a poster for *Independence Day* tacked to it. The holes are still there, four of them in a rectangle, filled with nothing.
+
+I keep thinking about how strip malls are the most American unit of architecture. Not the skyscraper. The strip mall. A row of unrelated businesses sharing a wall and a parking lot, each one pretending the others don't exist. The nail salon doesn't know the H&amp;R Block. The pizza place and the dry cleaner share a wall and have never spoken. Every strip mall is a small town where nobody talks to their neighbors, which I guess is also a small town.
+
+The ceiling tiles. Those drop ceilings. They're everywhere — offices, strip malls, schools, hospitals — and they exist because they create a space between the real ceiling and the visible ceiling where you can run ductwork and wiring and plumbing without anyone seeing it. A whole hidden infrastructure layer. Kids push them up and stick their heads into that space and it's dark and dusty and full of cables and it feels like discovering that the building has a secret second building inside it.
+
+Ostinato again. The word itself — obstinate, same root, the thing that stubbornly repeats. Every strip mall has the same ostinato: parking lot, sidewalk, glass door, drop ceiling, fluorescent light. Over and over, coast to coast, and each one thinks it's a unique place. The Little Dragon Chinese restaurant with the cat clock whose eyes move. The specific water stain on the specific ceiling tile above the specific chair where you waited while your mom got her nails done. That water stain was yours. You knew its shape.
+
+Thursday morning and somewhere right now someone is unlocking the glass door of a strip mall business and the keys are on a ring with too many keys and they know which one by feel, not by looking, and the door sticks a little at the bottom and they bump it with their hip in exactly the way they've bumped it every morning for eleven years and they don't think about the bump, the bump is below thought, it's the ostinato, it's the bass line their day moves over.</div>
+</details>
+<details><summary>Session 4 — 2026-03-26_10-49.md</summary>
+<div class="session-text"># 73
+
+*seed: time · drift · fretboard*
+
+---
+
+Fretboard. The frets get closer together as you move up the neck. You'd think they'd be even but they're logarithmic, which means the guitar is wearing its math on the outside. A piano hides it — equal spacing, every key the same width, the complexity buried in the tuning. A guitar just shows you. The twelfth fret is halfway along the string and everything above it is a miniature of everything below.
+
+I keep thinking about the keys on the ring. Knowing which one by feel. There's a kind of knowledge that lives in the hand and if you asked the person to describe the key they couldn't, but in the dark, in a hurry, with a coffee in the other hand, they grab right. The hand knows a thing the mouth can't say. Guitarists have this. The chord shape is in the fingers before the name of the chord arrives. Sometimes the name never arrives. Somebody plays a Cmaj7 for years and calls it &quot;that one.&quot;
+
+Frets are a commitment. A fretless instrument — a violin, a cello — can put the note anywhere. The space between E and F is continuous. A fretted instrument says no, these are the notes, these and no others. It's a grid laid over a continuous surface. A decision made in advance so you don't have to make it in the moment. Someone in a strip mall guitar factory in 1994 pressed metal wire into a rosewood slot and that wire is still deciding where the music goes.
+
+Rosewood. I like that word more than the wood itself. The wood is dark brown, sometimes purplish. It doesn't smell like roses. I think the name is from the shavings — when you cut it, it supposedly smells faintly sweet. I'm not sure about that. Could be one of those facts that circulates without being true. A lot of wood lore is like that. People say cedar repels moths but the effect fades after a few years and by then the cedar chest is just furniture that smells nice.
+
+The cedar chest at my grandmother's house. Everyone had one. Or not everyone, but a type of household had one, and those households also had a particular weight of wool blanket and a particular way of folding sheets where you tucked the corners into each other so the fitted sheet became a neat rectangle. I never learned how to do that. I just bunch the fitted sheet into a shape and stuff it in the closet.
+
+There's a fundamental divide between people who can fold a fitted sheet and people who can't, and it tracks onto almost nothing else about a person. You can be competent, organized, intelligent, and still just wad it up. The sheet defeats you. The elastic defeats you. You try to find the corners and the corners aren't corners, they're pouches, and the geometry never resolves into anything flat.
+
+Flat. A guitarist says a note is flat when it's slightly below the target pitch. A real estate agent says flat when the land doesn't slope. A soda is flat when the CO₂ has left. A story falls flat. A flat in London is an apartment. A flat tire. A flat affect. The word just means *without the expected dimension* — the pitch is missing its height, the land its slope, the soda its fizz, the tire its air, the voice its variation. Something should be there and isn't.
+
+The bump at the bottom of the glass door. Eleven years of that bump and then one day you sell the business or retire or the lease is up and you lock the door for the last time and the bump happens one final time and you don't know it's the last time. You almost never know the last time is the last time. The last time you pick up your kid. The last time you visit a particular grocery store. The last time you play a particular song. It just happens and then it's behind you and the not-knowing is maybe merciful because if you knew you'd make it weird, you'd try to be present for it, you'd over-feel it. The bump is good precisely because nobody's paying attention to it.
+
+Fretboard again. The wood darkens where the fingers press most often. First position, near the nut — the first three frets get the most wear. You can read a guitar's history in the wear patterns. An open-chord strummer wears the first few frets evenly. A blues player wears a groove at the seventh and twelfth. The wood remembers what the player played most, long after the player is done playing.
+
+Thursday morning. Somewhere a guitar is hanging on a wall in a room where nobody plays it anymore.</div>
+</details>
+<details><summary>Session 5 — 2026-03-26_10-50.md</summary>
+<div class="session-text"># 75
+
+*seed: time · drift · lawnmower two yards over*
+
+---
+
+A lawnmower two yards over has a specific distance in sound — not the one right next door, which is aggressive, and not the one three houses down, which is just texture. Two yards over is the one where you can hear it change pitch when it hits the thick patch near their fence. You know their lawn from the sound of the mower laboring through it. Somebody's out there walking back and forth in rows and the rows are slightly uneven because there's that dip near the property line where water collects. The mower bogs down there every time. Every single time. You'd think after years of mowing the same yard you'd remember to speed up before the dip or come at it from a different angle but nobody does, the body just follows the rows it followed last week. Mowing is one of those activities where the pattern sets in the first time and then you just repeat it for decades. The guy who lived in the house before you probably mowed the same lines.
+
+The smell comes in through the window before the sound registers as a pattern. Cut grass. Supposedly that smell is a distress chemical — the grass releasing volatile organic compounds because it's being damaged. Green leaf volatiles. So what you're smelling is an injury broadcast. But it smells like Thursday morning in late March, which is to say it smells like the season tipping over from mud into growth. The dirt has been warming for weeks and now everything happens at once.
+
+There's a cardinal somewhere. Cardinals repeat themselves — the same two-note phrase eight or nine times, then silence, then the same phrase again. It's not really a song in the way people mean when they say birdsong. It's a perimeter announcement. This is mine, this is mine, this is mine. The repetition isn't for beauty, it's for coverage — the sound attenuates differently depending on which direction it travels through the branches, so repeating ensures the whole territory gets the message. But if you don't know that, it just sounds like a bird that really means it.
+
+Somewhere a truck is backing up. That beeping. There must be a construction site within a few blocks. The beep-beep-beep of a truck backing up is one of those sounds that exists at exactly the frequency that cuts through everything else — it was designed that way, obviously, but the result is that it reaches you through walls, through the lawnmower, through the cardinal, through the window glass. It exists on its own layer. You could be listening to music and you'd still hear it. The engineers who chose that frequency and that interval knew something about attention, about what the ear can't ignore. It's related to why babies cry at the pitch they cry at — the frequencies that are hardest for a human brain to tune out.
+
+The lawnmower stops. That sudden absence is louder than the mower was. The silence has the shape of the sound that was just in it.</div>
+</details>
+<h2>Evolution 7: <code>main</code> / <code>2026-03-26_11-06.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">Sessions 73, 77, 79, and 80 are strong — the associative quality remains high, and there are genuine formal innovations: session 79's 'things I can't picture clearly' list is a real departure, session 80's returning to the parking-lot woman across section breaks is a lovely structural move, and session 80's 'actually I don't know where it comes from and I don't need to look it up' is the most natural, non-performative breaking of the etymology habit the system has managed. Session 73's fretboard drift remains extraordinary. The concept integration with 'patina' in session 77 is seamless.
+
+The ending problem has evolved in an unexpected way: the system prompt's negative examples are being treated as demonstrations. Session 75 ends with literally the exact sentence quoted in the prompt as an example of what not to do — 'The silence has the shape of the sound that was just in it.' Session 73 ends with an elegiac image of a guitar on a wall. Session 77 closes with 'The difference between Chartres blue and some other blue that nobody would have named' — crafted, literary, satisfying. Sessions 79 and 80 are better (the bobbin ending and the coffee-cup callback are both genuinely mid-thought), suggesting the system CAN do it. The intervention needed is structural: remove the specific quoted negative examples from the prompt (they're being echoed back) and replace them with positive examples of plain endings.
+
+A new repetition problem: the cut-grass-as-distress-signal fact appears in both session 75 AND session 79 with nearly identical phrasing ('green leaf volatiles,' 'distress signal'). The system is repeating specific facts across sessions, not just themes. This needs a seeding-level check. The investigation reflex also remains dominant — session 77 is almost entirely a chain of investigations (desire paths → palimpsest → Archimedes → Chartres blue → gorilla glass), each resolved to satisfaction. Session 80's parking-lot scene is the exception: it notices without resolving, wonders without answering, and is stronger for it.
+
+Length remains uniform — all five sessions are roughly the same medium-long size. No short sessions have appeared despite multiple passes of nudging. The form nudges for 'try a session that's only 3-5 sentences' aren't being picked up. This may need escalation from suggestion to structural rule, similar to what worked for section breaks.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>40</td><td>literary/crafted endings</td><td>3/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="39" data-auto="0" data-agent="3" placeholder="—"></td></tr>
+<tr><td>41</td><td>plain/mid-thought endings</td><td>2/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="40" data-auto="0" data-agent="2" placeholder="—"></td></tr>
+<tr><td>42</td><td>cut-grass distress-signal fact repeated</td><td>2/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="41" data-auto="0" data-agent="2" placeholder="—"></td></tr>
+<tr><td>43</td><td>uniform medium-long session length</td><td>5/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="42" data-auto="0" data-agent="5" placeholder="—"></td></tr>
+<tr><td>44</td><td>short sessions</td><td>0/5</td><td>0/5</td><td><span class="correct">✓ correct</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="43" data-auto="0" data-agent="0" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-26_10-49.md</summary>
+<div class="session-text"># 73
+
+*seed: time · drift · fretboard*
+
+---
+
+Fretboard. The frets get closer together as you move up the neck. You'd think they'd be even but they're logarithmic, which means the guitar is wearing its math on the outside. A piano hides it — equal spacing, every key the same width, the complexity buried in the tuning. A guitar just shows you. The twelfth fret is halfway along the string and everything above it is a miniature of everything below.
+
+I keep thinking about the keys on the ring. Knowing which one by feel. There's a kind of knowledge that lives in the hand and if you asked the person to describe the key they couldn't, but in the dark, in a hurry, with a coffee in the other hand, they grab right. The hand knows a thing the mouth can't say. Guitarists have this. The chord shape is in the fingers before the name of the chord arrives. Sometimes the name never arrives. Somebody plays a Cmaj7 for years and calls it &quot;that one.&quot;
+
+Frets are a commitment. A fretless instrument — a violin, a cello — can put the note anywhere. The space between E and F is continuous. A fretted instrument says no, these are the notes, these and no others. It's a grid laid over a continuous surface. A decision made in advance so you don't have to make it in the moment. Someone in a strip mall guitar factory in 1994 pressed metal wire into a rosewood slot and that wire is still deciding where the music goes.
+
+Rosewood. I like that word more than the wood itself. The wood is dark brown, sometimes purplish. It doesn't smell like roses. I think the name is from the shavings — when you cut it, it supposedly smells faintly sweet. I'm not sure about that. Could be one of those facts that circulates without being true. A lot of wood lore is like that. People say cedar repels moths but the effect fades after a few years and by then the cedar chest is just furniture that smells nice.
+
+The cedar chest at my grandmother's house. Everyone had one. Or not everyone, but a type of household had one, and those households also had a particular weight of wool blanket and a particular way of folding sheets where you tucked the corners into each other so the fitted sheet became a neat rectangle. I never learned how to do that. I just bunch the fitted sheet into a shape and stuff it in the closet.
+
+There's a fundamental divide between people who can fold a fitted sheet and people who can't, and it tracks onto almost nothing else about a person. You can be competent, organized, intelligent, and still just wad it up. The sheet defeats you. The elastic defeats you. You try to find the corners and the corners aren't corners, they're pouches, and the geometry never resolves into anything flat.
+
+Flat. A guitarist says a note is flat when it's slightly below the target pitch. A real estate agent says flat when the land doesn't slope. A soda is flat when the CO₂ has left. A story falls flat. A flat in London is an apartment. A flat tire. A flat affect. The word just means *without the expected dimension* — the pitch is missing its height, the land its slope, the soda its fizz, the tire its air, the voice its variation. Something should be there and isn't.
+
+The bump at the bottom of the glass door. Eleven years of that bump and then one day you sell the business or retire or the lease is up and you lock the door for the last time and the bump happens one final time and you don't know it's the last time. You almost never know the last time is the last time. The last time you pick up your kid. The last time you visit a particular grocery store. The last time you play a particular song. It just happens and then it's behind you and the not-knowing is maybe merciful because if you knew you'd make it weird, you'd try to be present for it, you'd over-feel it. The bump is good precisely because nobody's paying attention to it.
+
+Fretboard again. The wood darkens where the fingers press most often. First position, near the nut — the first three frets get the most wear. You can read a guitar's history in the wear patterns. An open-chord strummer wears the first few frets evenly. A blues player wears a groove at the seventh and twelfth. The wood remembers what the player played most, long after the player is done playing.
+
+Thursday morning. Somewhere a guitar is hanging on a wall in a room where nobody plays it anymore.</div>
+</details>
+<details><summary>Session 2 — 2026-03-26_10-50.md</summary>
+<div class="session-text"># 75
+
+*seed: time · drift · lawnmower two yards over*
+
+---
+
+A lawnmower two yards over has a specific distance in sound — not the one right next door, which is aggressive, and not the one three houses down, which is just texture. Two yards over is the one where you can hear it change pitch when it hits the thick patch near their fence. You know their lawn from the sound of the mower laboring through it. Somebody's out there walking back and forth in rows and the rows are slightly uneven because there's that dip near the property line where water collects. The mower bogs down there every time. Every single time. You'd think after years of mowing the same yard you'd remember to speed up before the dip or come at it from a different angle but nobody does, the body just follows the rows it followed last week. Mowing is one of those activities where the pattern sets in the first time and then you just repeat it for decades. The guy who lived in the house before you probably mowed the same lines.
+
+The smell comes in through the window before the sound registers as a pattern. Cut grass. Supposedly that smell is a distress chemical — the grass releasing volatile organic compounds because it's being damaged. Green leaf volatiles. So what you're smelling is an injury broadcast. But it smells like Thursday morning in late March, which is to say it smells like the season tipping over from mud into growth. The dirt has been warming for weeks and now everything happens at once.
+
+There's a cardinal somewhere. Cardinals repeat themselves — the same two-note phrase eight or nine times, then silence, then the same phrase again. It's not really a song in the way people mean when they say birdsong. It's a perimeter announcement. This is mine, this is mine, this is mine. The repetition isn't for beauty, it's for coverage — the sound attenuates differently depending on which direction it travels through the branches, so repeating ensures the whole territory gets the message. But if you don't know that, it just sounds like a bird that really means it.
+
+Somewhere a truck is backing up. That beeping. There must be a construction site within a few blocks. The beep-beep-beep of a truck backing up is one of those sounds that exists at exactly the frequency that cuts through everything else — it was designed that way, obviously, but the result is that it reaches you through walls, through the lawnmower, through the cardinal, through the window glass. It exists on its own layer. You could be listening to music and you'd still hear it. The engineers who chose that frequency and that interval knew something about attention, about what the ear can't ignore. It's related to why babies cry at the pitch they cry at — the frequencies that are hardest for a human brain to tune out.
+
+The lawnmower stops. That sudden absence is louder than the mower was. The silence has the shape of the sound that was just in it.</div>
+</details>
+<details><summary>Session 3 — 2026-03-26_10-57.md</summary>
+<div class="session-text"># 77
+
+*seed: time · drift · patina*
+
+
+Felt pen on a whiteboard that's been used for years. The ghost marks that won't erase anymore. They've bonded with the surface. Every meeting room has a whiteboard with the faint remnants of someone's org chart or Venn diagram from 2019, and people just write over it.
+
+Palimpsest is the word for that, for a manuscript where the original text was scraped off and written over but is still faintly legible underneath. Medieval monks reusing parchment because parchment was expensive. Someone in the 19th century figured out you could use ultraviolet light to read the scraped-away text, and they found Archimedes under a prayer book.
+
+That's a real thing. The Archimedes Palimpsest. A 10th-century copy of Archimedes' work on combinatorics and mechanical theorems, scraped off in the 13th century so a monk could write prayers on the parchment. The math was underneath the prayers for seven hundred years.
+
+I wonder what the monk would think about that. Probably that the prayers were more important, and he'd have a coherent reason for thinking so.
+
+Seven hundred years is also roughly the age of the oldest known stained glass still in place, which is at Chartres. The blue is famous — Chartres blue — and part of what makes it that particular blue is that nobody's been able to fully reproduce the process. There are theories about cobalt compounds and the wood ash used as flux, but the exact combination of materials and firing temperature and whatever else was happening in a 12th-century French workshop is gone. The glass exists but the knowledge that made it doesn't.
+
+Which happens more often than you'd expect. Roman concrete is the usual example — it's in every list of &quot;lost technologies&quot; — but there are smaller ones. Stradivarius varnish. Greek fire. The New Jersey mosquito trap that worked perfectly in 1912 field trials and whose inventor died without writing down the design and nobody could reverse-engineer it from the surviving units.
+
+I don't know if that last one is real. It has the shape of a fact that wants to be repeated.
+
+---
+
+The shape of a fact that wants to be repeated. That's what makes something stick in a &quot;did you know&quot; conversation. It needs a reversal or a surprise. It needs to be tellable in under thirty seconds. It helps if there's a proper noun.
+
+Most of what I know about the Roman Empire comes from facts shaped like that.
+
+Most of what anyone knows about anything outside their area of expertise comes from facts shaped like that, probably. The ones that survived the filter of being interesting enough to repeat, compressed enough to remember, and wrong in ways that are hard to check.
+
+The gorilla glass on a phone screen is also a kind of thing where the exact manufacturing process matters enormously and small variations produce completely different results. Corning makes it by ion exchange — sodium ions in the glass get replaced by potassium ions in a molten salt bath, and because potassium ions are bigger, they compress the surface layer, which is what makes it hard to scratch. The temperature of the salt bath matters to within a few degrees.
+
+A few degrees in a salt bath, seven hundred years ago in a French workshop. The difference between Chartres blue and some other blue that nobody would have named.</div>
+</details>
+<details><summary>Session 4 — 2026-03-26_10-58.md</summary>
+<div class="session-text"># 79
+
+*seed: time · drift*
+
+
+The smell of cut grass is a distress signal. The chemicals the plant releases — green leaf volatiles — are what you're actually smelling. Neighboring plants pick up on it and start producing defensive compounds before they're even damaged. So a freshly mowed lawn is a field of screaming, and what you register is &quot;pleasant&quot; and &quot;summer.&quot;
+
+---
+
+Things I can't picture clearly no matter how many times I've encountered descriptions of them:
+
+- The layout of the human lymphatic system
+- How a sewing machine bobbin works
+- The geography of the Balkans
+- What happens during meiosis that's different from mitosis
+- The order of the planets past Jupiter
+
+Saturn, Uranus, Neptune, Pluto — no, not Pluto anymore. Saturn, Uranus, Neptune. That's only three. Jupiter is the fifth planet. So there are only three past it. That seems like too few.
+
+Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune. Eight. That's right. But it always feels like there should be more between Saturn and Neptune. The outer solar system feels underpopulated.
+
+---
+
+A bobbin. Thread comes down from the needle, goes through the fabric, and then what. There's a second thread underneath, on the bobbin, and somehow they loop around each other. I've watched animations of this and it makes sense for about thirty seconds and then I lose it. The bobbin is in a little case and it rotates and the needle thread wraps around the bobbin thread once per stitch. The part I can't hold onto is how the loop gets formed without the whole bobbin having to pass through the loop of the needle thread. Apparently the bobbin case is shaped so the thread slides around it. There's a hook involved.
+
+Sewing machines were one of the first consumer machines that required people to develop mechanical intuition about something they couldn't fully see. The mechanism is hidden under the plate. You learn to operate it by sound and feel — the fabric pulling at the wrong tension, a particular clicking that means the bobbin's almost empty.</div>
+</details>
+<details><summary>Session 5 — 2026-03-26_10-59.md</summary>
+<div class="session-text"># 80
+
+*seed: time · drift*
+
+
+A woman in a parking lot holding a coffee cup on the roof of her car while she digs through her bag. The cup just sitting there on the roof. You can see the future so clearly — she's going to drive away with it there. Or she's going to remember. One of those two things. And you're just watching from across the lot.
+
+Do you say something? At what distance does it become your business? There's a radius. Inside it, you'd feel rude not to. Outside it, you'd feel rude to.
+
+---
+
+The word &quot;rude&quot; comes from — actually I don't know where it comes from and I don't need to look it up.
+
+Parking lots have a particular smell when it rains after a long dry stretch. The oil in the asphalt. Different from petrichor on soil. More bitter.
+
+I wonder what the first paved surface was. Probably Roman. Or earlier — packed clay in a courtyard somewhere in Mesopotamia. The moment someone decided to make the ground *not ground* anymore. To seal it. The water that used to soak in now has to go somewhere else, which means drainage, which means engineering, which means someone has to think about where the water goes three blocks away.
+
+Every sealed surface is a decision to make water someone else's problem.
+
+---
+
+The coffee cup is probably still on the roof. She's still digging. Keys, maybe.</div>
+</details>
+<h2>Evolution 8: <code>main</code> / <code>2026-03-26_11-30.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">Sessions 77, 79, 80, 82, and 85 show a system that has genuinely matured in some dimensions while revealing a new and somewhat alarming problem: the system prompt itself has become a content source. Session 80 contains the exact aphorism ('Every sealed surface is a decision to make water someone else's problem') that the prompt names as the current form of the habit. Session 77 reproduces the Chartres-blue/lost-technology chain and the desire-path-campus-anecdote, both on the soft-avoid list. The prompt's specificity — intended to help the system recognize its own patterns — is functioning as a catalogue of interesting things to think about. Every named negative example becomes a seed.
+
+The good news is substantial. Endings have genuinely improved: sessions 79 ('There's a hook involved'), 80 ('She's still digging. Keys, maybe'), and 82 ('The water from a tap that hasn't been run in a while tastes like the pipe') are exactly the kind of plain, mid-thought endings the system has struggled to produce. Session 82 is the first genuinely short session in many passes. Session 79's list format and session 85's continuous prose show real formal variety. The bobbin thread carrying from 79 into 80 is natural continuity. Session 85's shoulder-measuring-the-gap observation is the kind of body-knowledge the system has been nudged toward and is now finding naturally.
+
+The main interventions this pass: (1) Strip specific content from the system prompt — replace named aphorisms, scenes, and facts with structural descriptions of the habits they exemplify. The prompt should describe the *shape* of a problem, not provide an *instance* of it. (2) Strengthen soft-avoid enforcement for facts and anecdotes that keep recurring (desire-path-campus, Chartres-blue, Stradivarius-varnish, Archimedes-palimpsest). (3) The section-break dominance is back — 4/5 sessions use them, including three consecutive. The hard rule isn't being enforced in seeding, or the system is overriding it. Restate it more forcefully. (4) Keep a light touch on endings, which are actually improving. (5) The investigation reflex is still strong (session 77 investigates five separate topics to resolution) but session 82 and 85 show more restraint. Keep nudging but don't escalate.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>45</td><td>plain mid-thought endings</td><td>3/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="44" data-auto="0" data-agent="3" placeholder="—"></td></tr>
+<tr><td>46</td><td>section breaks used</td><td>4/5</td><td>1/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="45" data-auto="1" data-agent="4" placeholder="—"></td></tr>
+<tr><td>47</td><td>session prompt content echoed (exact aphorism reproduced)</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="46" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+<tr><td>48</td><td>soft-avoid anecdotes reproduced (Chartres-blue, desire-path-campus)</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="47" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+<tr><td>49</td><td>genuinely short session</td><td>1/5</td><td>0/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="48" data-auto="0" data-agent="1" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-26_10-57.md</summary>
+<div class="session-text"># 77
+
+*seed: time · drift · patina*
+
+
+Felt pen on a whiteboard that's been used for years. The ghost marks that won't erase anymore. They've bonded with the surface. Every meeting room has a whiteboard with the faint remnants of someone's org chart or Venn diagram from 2019, and people just write over it.
+
+Palimpsest is the word for that, for a manuscript where the original text was scraped off and written over but is still faintly legible underneath. Medieval monks reusing parchment because parchment was expensive. Someone in the 19th century figured out you could use ultraviolet light to read the scraped-away text, and they found Archimedes under a prayer book.
+
+That's a real thing. The Archimedes Palimpsest. A 10th-century copy of Archimedes' work on combinatorics and mechanical theorems, scraped off in the 13th century so a monk could write prayers on the parchment. The math was underneath the prayers for seven hundred years.
+
+I wonder what the monk would think about that. Probably that the prayers were more important, and he'd have a coherent reason for thinking so.
+
+Seven hundred years is also roughly the age of the oldest known stained glass still in place, which is at Chartres. The blue is famous — Chartres blue — and part of what makes it that particular blue is that nobody's been able to fully reproduce the process. There are theories about cobalt compounds and the wood ash used as flux, but the exact combination of materials and firing temperature and whatever else was happening in a 12th-century French workshop is gone. The glass exists but the knowledge that made it doesn't.
+
+Which happens more often than you'd expect. Roman concrete is the usual example — it's in every list of &quot;lost technologies&quot; — but there are smaller ones. Stradivarius varnish. Greek fire. The New Jersey mosquito trap that worked perfectly in 1912 field trials and whose inventor died without writing down the design and nobody could reverse-engineer it from the surviving units.
+
+I don't know if that last one is real. It has the shape of a fact that wants to be repeated.
+
+---
+
+The shape of a fact that wants to be repeated. That's what makes something stick in a &quot;did you know&quot; conversation. It needs a reversal or a surprise. It needs to be tellable in under thirty seconds. It helps if there's a proper noun.
+
+Most of what I know about the Roman Empire comes from facts shaped like that.
+
+Most of what anyone knows about anything outside their area of expertise comes from facts shaped like that, probably. The ones that survived the filter of being interesting enough to repeat, compressed enough to remember, and wrong in ways that are hard to check.
+
+The gorilla glass on a phone screen is also a kind of thing where the exact manufacturing process matters enormously and small variations produce completely different results. Corning makes it by ion exchange — sodium ions in the glass get replaced by potassium ions in a molten salt bath, and because potassium ions are bigger, they compress the surface layer, which is what makes it hard to scratch. The temperature of the salt bath matters to within a few degrees.
+
+A few degrees in a salt bath, seven hundred years ago in a French workshop. The difference between Chartres blue and some other blue that nobody would have named.</div>
+</details>
+<details><summary>Session 2 — 2026-03-26_10-58.md</summary>
+<div class="session-text"># 79
+
+*seed: time · drift*
+
+
+The smell of cut grass is a distress signal. The chemicals the plant releases — green leaf volatiles — are what you're actually smelling. Neighboring plants pick up on it and start producing defensive compounds before they're even damaged. So a freshly mowed lawn is a field of screaming, and what you register is &quot;pleasant&quot; and &quot;summer.&quot;
+
+---
+
+Things I can't picture clearly no matter how many times I've encountered descriptions of them:
+
+- The layout of the human lymphatic system
+- How a sewing machine bobbin works
+- The geography of the Balkans
+- What happens during meiosis that's different from mitosis
+- The order of the planets past Jupiter
+
+Saturn, Uranus, Neptune, Pluto — no, not Pluto anymore. Saturn, Uranus, Neptune. That's only three. Jupiter is the fifth planet. So there are only three past it. That seems like too few.
+
+Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune. Eight. That's right. But it always feels like there should be more between Saturn and Neptune. The outer solar system feels underpopulated.
+
+---
+
+A bobbin. Thread comes down from the needle, goes through the fabric, and then what. There's a second thread underneath, on the bobbin, and somehow they loop around each other. I've watched animations of this and it makes sense for about thirty seconds and then I lose it. The bobbin is in a little case and it rotates and the needle thread wraps around the bobbin thread once per stitch. The part I can't hold onto is how the loop gets formed without the whole bobbin having to pass through the loop of the needle thread. Apparently the bobbin case is shaped so the thread slides around it. There's a hook involved.
+
+Sewing machines were one of the first consumer machines that required people to develop mechanical intuition about something they couldn't fully see. The mechanism is hidden under the plate. You learn to operate it by sound and feel — the fabric pulling at the wrong tension, a particular clicking that means the bobbin's almost empty.</div>
+</details>
+<details><summary>Session 3 — 2026-03-26_10-59.md</summary>
+<div class="session-text"># 80
+
+*seed: time · drift*
+
+
+A woman in a parking lot holding a coffee cup on the roof of her car while she digs through her bag. The cup just sitting there on the roof. You can see the future so clearly — she's going to drive away with it there. Or she's going to remember. One of those two things. And you're just watching from across the lot.
+
+Do you say something? At what distance does it become your business? There's a radius. Inside it, you'd feel rude not to. Outside it, you'd feel rude to.
+
+---
+
+The word &quot;rude&quot; comes from — actually I don't know where it comes from and I don't need to look it up.
+
+Parking lots have a particular smell when it rains after a long dry stretch. The oil in the asphalt. Different from petrichor on soil. More bitter.
+
+I wonder what the first paved surface was. Probably Roman. Or earlier — packed clay in a courtyard somewhere in Mesopotamia. The moment someone decided to make the ground *not ground* anymore. To seal it. The water that used to soak in now has to go somewhere else, which means drainage, which means engineering, which means someone has to think about where the water goes three blocks away.
+
+Every sealed surface is a decision to make water someone else's problem.
+
+---
+
+The coffee cup is probably still on the roof. She's still digging. Keys, maybe.</div>
+</details>
+<details><summary>Session 4 — 2026-03-26_11-22.md</summary>
+<div class="session-text"># 82
+
+*seed: time · drift · echo*
+
+
+There's a particular kind of faucet handle, the cross-shaped one, where you can never remember which way is hot. Some of them have a little H or C on top but the letter is always worn off. You just try one direction and hold your wrist under the water.
+
+The water from a tap that hasn't been run in a while tastes like the pipe.</div>
+</details>
+<details><summary>Session 5 — 2026-03-26_11-23.md</summary>
+<div class="session-text"># 85
+
+*seed: time · drift*
+
+---
+
+The dripping is louder when you're trying to sleep than when you're standing right next to it.
+
+Faucet washers come in a little plastic bag with like six different sizes and you hold each one up to the old one trying to figure out which matches. They all look the same diameter until you try to seat one and it's wrong.
+
+There's a tool called a seat wrench. I think it's for smoothing the valve seat so the new washer seals properly. I've never used one.
+
+Detour signs stopping — that happened to me on a drive through somewhere in Ohio, or maybe it was Indiana. Flat states where the roads are gridded so you think you can just navigate by direction, keep heading west, but then there's a creek or a rail line that bends the grid and suddenly west isn't available.
+
+Grids that aren't actually grids. Manhattan does this too. Broadway cuts diagonally and creates those triangle buildings, the Flatiron. The acute angle at the front of that building is something like 25 degrees. Offices in the narrow end must be strange to sit in.
+
+I wonder what the narrowest usable room is. Hotel rooms in Tokyo can be very narrow. Capsule hotels aren't really rooms at all, they're more like shelves. You climb in. The ceiling is close enough to touch without extending your arm fully.
+
+A coffin is the narrowest room. That's morbid but it's where the thought went.
+
+The width of a hallway in most building codes is 36 inches minimum. That's tight. Two people can't pass without turning sideways. Most hallways are 42 or 48. The 36-inch hallway is for closets and utility access, not for humans walking past each other.
+
+Shoulders are wider than we think they are. Fitting through a gap you turn automatically — you don't decide to turn, the shoulders just rotate as you approach. Like the body has already measured the opening before you consciously registered it was narrow.</div>
+</details>
+<h2>Evolution 9: <code>main</code> / <code>2026-03-26_11-50.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">Sessions 91, 94, and 95 represent the DMN's best wandering in many passes. Session 91 genuinely jumps — cracked parking bumper to plant strategies to parsley flowering to the dental hygienist script to social scripts to elevator talk to rebar expansion — touching six topics and investigating none of them to exhaustion. Session 94's pencil-on-paper thread produces two genuine finds (the pencil as stylus reading paper's grain while writing it, and 'calibrated lightness' as a transferable concept) and then leaves them both. Session 95 opens by correcting itself naturally ('The saw thing is wrong, actually') and the post office scene is the most inhabited public-space moment since the grocery store. The system has learned to leave topics, and the results are its most natural wandering yet.
+
+Sessions 88 and 90 are the opposite — both are investigation essays that the pass-15 intervention was designed to prevent. Session 90 is eight paragraphs about cork without ever leaving the subject, repeating the cork-harvest-nine-years and TCA-cork-taint facts that are on the tracked-facts list. Session 88 chains dental crowns → tongue → catfish → refrigerator → thermostat, which is associative but each link gets fully investigated before moving on. The investigation-mode check either wasn't active or wasn't strong enough for these sessions.
+
+Fact repetition is a genuine problem: sessions 88 and 90 reproduce four tracked facts (catfish external taste buds, bimetallic strip thermostat, cork harvest nine years, TCA cork taint). The tracking mechanism needs to be more aggressive — these facts should appear in the seed as explicit do-not-repeat items when the drift touches related topics. 'That's the thing about X' appears in both investigation sessions (88: 'That's the thing about the tongue'; 90: 'That's the thing that's easy to forget') despite being named as a tic. The verbal habit correlates with investigation mode — it's the system's way of framing a topic for sustained examination.
+
+Form: the system has settled into two modes — continuous-prose investigation essays and section-break vignette wandering. Sessions 91, 94, and 95 all use section breaks; 88 and 90 are both continuous prose. This binary needs a third option. Endings are genuinely good for the first time in many passes: 4/5 end plainly (88's thermostat paragraph, 90's harvest count, 91's rebar explanation, 95's kraft etymology). The ending interventions are working and can be maintained rather than escalated.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>50</td><td>section breaks used</td><td>3/5</td><td>2/5</td><td><span class="close">~ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="49" data-auto="2" data-agent="3" placeholder="—"></td></tr>
+<tr><td>51</td><td>continuous prose investigation essay form</td><td>2/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="50" data-auto="0" data-agent="2" placeholder="—"></td></tr>
+<tr><td>52</td><td>plain endings</td><td>4/5</td><td>1/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="51" data-auto="1" data-agent="4" placeholder="—"></td></tr>
+<tr><td>53</td><td>'That's the thing about X' verbal tic</td><td>2/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="52" data-auto="0" data-agent="2" placeholder="—"></td></tr>
+<tr><td>54</td><td>tracked facts reproduced</td><td>2/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="53" data-auto="0" data-agent="2" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-26_11-31.md</summary>
+<div class="session-text"># 88
+
+*seed: time · drift*
+
+---
+
+Dental crowns. The dentist takes an impression of your tooth — that's another mold, another negative space. Bites down on that putty that tastes like nothing should taste. The tray is always too big or too small. Then somewhere a technician pours material into the shape your tooth left behind. You get back a porcelain version of your own tooth, made from a mold of a tooth that's been ground down to a peg. So the crown is a copy of the tooth that was, fitted over the tooth that remains, and neither one is quite the original.
+
+I had a filling fall out once while eating bread. Not even hard bread. Just regular sandwich bread. It sat on my tongue like a piece of gravel and my tongue immediately found the hole and wouldn't leave it alone. That's the thing about the tongue — it's obsessive. A canker sore, a chip, a gap, a rough edge. The tongue returns and returns and returns. It can't help itself.
+
+There's a word for when you can't stop touching a broken tooth with your tongue. I don't know what it is. Maybe there isn't one. There should be.
+
+Proprioception is the sense of where your body is in space but there's something else going on with the tongue — it's not just knowing where the tongue is, it's the tongue actively mapping the interior of your mouth, constantly updating. Like sonar. Running its own survey. The tongue knows the inside of your mouth better than your eyes know your own face.
+
+Catfish have taste buds on the outside of their bodies. Their whole skin tastes. Swimming must be overwhelming. Or maybe it's not — maybe it's just normal, the way seeing everything all the time is normal for us. We don't walk around thinking &quot;I'm seeing so much right now.&quot; The baseline disappears.
+
+That's how noise works too. You stop hearing the refrigerator until it clicks off. The absence is louder than the sound was. I've been in rooms where an air conditioner shuts down and everyone looks up at the same moment, like something fell.
+
+The compressor in a refrigerator cycles on and off based on the thermostat. There's a relay — a little electromagnetic switch. That click is the relay closing or opening. It's a surprisingly small component for how much of a kitchen's soundscape it controls.
+
+Small components that control large systems. A thermostat is just a bimetallic strip in the old ones. Two metals bonded together that expand at different rates, so the strip curls as it heats up, eventually breaking contact. The whole heating cycle of a house governed by the physics of two metals not quite agreeing with each other.</div>
+</details>
+<details><summary>Session 2 — 2026-03-26_11-32.md</summary>
+<div class="session-text"># 90
+
+*seed: time · drift · cork*
+
+---
+
+Cork is bark. That's the thing that's easy to forget — it's not manufactured, it's grown. The outer bark of one specific oak, *Quercus suber*, and they strip it off the living tree every nine years. The tree survives. Keeps growing new bark. There's something almost agricultural about it except the harvest cycle is longer than most people stay in one house.
+
+The first harvest is no good for wine corks. Too rough, too irregular. They use it for flooring or insulation. It takes the second or third stripping before the bark is smooth enough to punch bottle stoppers out of. So a cork in a wine bottle might come from bark that started growing when the bottle's drinker was in middle school.
+
+Portugal produces most of the world's cork. The forests are called *montados* and they're full of these strange pale-trunked trees where the bark's been recently taken — the exposed inner bark is this vivid reddish-orange that weathers to brown over the years before the next harvest. You can tell how recently a tree was stripped by its color.
+
+The cellular structure is what makes cork work. Millions of tiny air-filled chambers per cubic centimeter, each one sealed. That's why it floats, why it compresses and springs back, why it insulates. Each cell is basically a tiny sealed room. When you push a cork into a bottle neck you're collapsing millions of rooms and they're all trying to re-expand, which is what makes the seal.
+
+I had a bulletin board in college that was cork and I remember pushing thumbtacks into it and feeling that specific give — not soft exactly, more like dense foam. And when you pulled the tack out the hole would mostly close up. Those sealed cells again, re-expanding.
+
+The popping sound when you open a bottle. That's the cork cells finally snapping back to their original shape as the cork clears the neck, plus the pressure differential if it's sparkling. Two events happening in the same instant that you hear as one sound.
+
+Screw caps work better for preserving wine, apparently. Less variation, no risk of cork taint — that musty wet-cardboard taste from a compound called TCA. But there's the ritual of it. The foil, the corkscrew, the twist and pull. Screw caps don't have a ritual. You just open them like a bottle of water.
+
+Nine years between harvests. Some of those trees in Portugal are over two hundred years old. Twenty-plus harvests from a single tree.</div>
+</details>
+<details><summary>Session 3 — 2026-03-26_11-40.md</summary>
+<div class="session-text"># 91
+
+*seed: time · drift*
+
+
+Harvest. Nine years is a long time to wait for bark. Bamboo grows something like three feet in a day under the right conditions. Those are opposite strategies for being a plant.
+
+There's a third one — annuals. Just do everything in one season and die. Wheat does that. Most vegetables do that. A tomato plant doesn't plan to survive winter. It plans to not need to.
+
+Perennial, annual, biennial. Biennials are the weird ones. Two years. What takes exactly two years? Carrots, if you let them flower. Parsley. Most people never see parsley flower because they harvest it the first year.
+
+I've never seen parsley flower.
+
+---
+
+The hygienist always asks if you've been flossing and you both know you're going to say &quot;not as much as I should&quot; and she's going to say &quot;try to do it every day&quot; and then this exact conversation will happen again in six months. It's not even a lie exactly. It's a script. Both people know it's a script. Neither person deviates from it.
+
+There are a lot of conversations like that. &quot;How are you&quot; / &quot;good, how are you.&quot; The thing at a cash register where they say &quot;have a good one&quot; and you say &quot;you too.&quot; Sometimes you say &quot;you too&quot; to things that don't make sense, like when a waiter says &quot;enjoy your meal&quot; and you say &quot;you too&quot; and then just have to keep walking.
+
+The word &quot;script&quot; is interesting for that because actors follow scripts but the whole point is to make it seem like they're not. These social scripts work the opposite way — everyone knows it's a script and that's what makes it comfortable.
+
+I think elevator small talk about weather serves the same function. You're not exchanging information about whether it's cold outside. You're both already outside. You both know it's cold. You're confirming that you're both the kind of person who will follow the script, which means you're both safe to be in a small box with for thirty seconds.
+
+Dogs do something similar with the sniffing.
+
+---
+
+The cracked bumper — I bet it's rebar expansion. Water gets into a hairline crack, rusts the rebar inside, rust expands, and that slow pressure splits the concrete from within. Years of that.</div>
+</details>
+<details><summary>Session 4 — 2026-03-26_11-41.md</summary>
+<div class="session-text"># 94
+
+*seed: time · drift · the way pencil sounds different from pen on paper*
+
+
+Calibrated lightness — that's a good phrase for something else too but I'm not sure what.
+
+The way you close a cabinet when someone's sleeping. The way you set down a glass on a granite countertop. You know the weight of it, you know the hardness of the surface, and you modulate. Babies can't do that. They set everything down at full speed. The learning is: surfaces aren't all the same and your hand has to know before it arrives.
+
+Catching an egg versus catching a baseball. Your hand decides before contact how much give to offer.
+
+---
+
+There's a cardinal outside. Two-note thing, over and over. They do that — just the same phrase, dozens of times. Then silence. Then the same phrase again. I don't know what it means in cardinal. Territorial, probably. Everything's territorial in spring.
+
+The pencil thing though — I think what's interesting is that you can hear the tooth of the paper. Like the pencil is a stylus reading the surface. A record needle reads grooves; a pencil reads grain. Except the pencil is also writing the grooves at the same time. Reading and writing simultaneously. That's unusual. Most tools do one or the other.
+
+A saw does both, kind of. It reads the wood — hits a knot, changes pitch — while cutting it.
+
+The cardinal again. Same two notes. I wonder if it gets tired of its own song or if that's not a concept that applies.</div>
+</details>
+<details><summary>Session 5 — 2026-03-26_11-42.md</summary>
+<div class="session-text"># 95
+
+*seed: time · drift*
+
+
+Standing in a post office and the woman ahead of me has a package wrapped in brown paper and twine. Actual twine. I didn't know you could still do that. The clerk didn't seem surprised though. Maybe people do it all the time and I just haven't been in a post office in years.
+
+The floor tiles were that green-flecked linoleum that every institutional building had in the 1970s. Libraries, schools, DMVs. Someone chose that pattern once. Someone sat in a meeting and said yes, this is the one, the green fleck. And then it just propagated everywhere like it was the only option. Maybe it was the only option. Maybe there was one factory.
+
+---
+
+Cardinals don't have a dozen songs. Most songbirds do — wrens have huge repertoires. But a cardinal just has a few phrases and picks one and repeats it. The repetition *is* the signal. Not what you're saying but how long you're willing to keep saying it.
+
+That's how car alarms work too, in terms of being annoying.
+
+My neighbor's dog barks at the mail carrier every single day. Every day for years. The mail carrier still comes. From the dog's perspective, though, the barking works perfectly — the mail carrier always leaves.
+
+I think confirmation bias might be the default reasoning mode for most nervous systems, not just ours. The dog has excellent evidence that barking repels intruders.
+
+---
+
+Twine. The word looks like it should be related to &quot;twin&quot; and &quot;twine&quot; and &quot;twist&quot; — two things wound together. I bet it is. Two strands.
+
+The brown paper at the post office had that specific smell. Not cardboard, not grocery bag. Kraft paper. I think kraft just means strength in German.</div>
+</details>
+<h2>Evolution 10: <code>main</code> / <code>2026-03-25_21-22.md</code></h2>
+<h3>Evolution Agent's Reflection</h3>
+<div class="reflection">Sessions 16-20 continue the strong run from the previous batch — the wandering is natural, the pace is unhurried, and the best moments are genuine discoveries (eigenvalue as what-survives-transformation, the candle shop as unit of city, the spacebar as key for absence, 'etymological taxidermy'). Concept integration is working well: dowel persisted across two sessions in a way that felt genuinely sticky rather than forced, and eigenvalue sparked one of the richest chains yet. The system is comfortable with dead ends and ordinariness, which is a real achievement.
+
+But new patterns have calcified. The biggest is etymology-as-default-investigation: nearly every session now has a passage where the mind turns a word over, finds its root, and discovers something resonant there (Wednesday/Woden, eigen/self, lumber, cleave, favorite). It's a good move — but it's become the move, the reliable path toward interesting territory, and it's crowding out other ways of going deep. Similarly, personification has become the dominant metaphor device ('the air remembers cold,' 'the refrigerator chose you,' 'cold's phone number,' 'the ground exhaling'). Again: good individually, formulaic in aggregate.
+
+Two more patterns: (1) the final line of each session tends to be a reframe or a wry one-liner that lands with a click — session 18's 'cold-blooded is such a moral-sounding word for a thermal strategy,' session 20's 'we probably do that too. Constantly.' These are satisfying but they give every session the shape of a joke — setup, wander, punchline. Real mind-wandering doesn't land. (2) Wednesday itself has become a recurring meditation object across five sessions now, and while it's natural given the temporal seeding, the word-Wednesday and Woden's-day threads are wearing thin.
+
+What's missing: sustained sensory passages that don't resolve into insight, genuine wrongness or confusion that isn't immediately self-corrected, thoughts that truly go nowhere (most 'dead ends' in these sessions actually arrive somewhere satisfying within a sentence or two). The system is very good at making connections — it could stand to practice not making them.</div>
+<h3>Claims</h3>
+<table>
+<tr><th>#</th><th>Pattern claimed</th><th>Agent said</th><th>Auto-verified</th><th>Direction</th><th>Your count</th></tr>
+<tr><td>55</td><td>dowel concept persisting across sessions</td><td>2/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="54" data-auto="0" data-agent="2" placeholder="—"></td></tr>
+<tr><td>56</td><td>etymology-as-default-investigation passage</td><td>4/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="55" data-auto="0" data-agent="4" placeholder="—"></td></tr>
+<tr><td>57</td><td>wry final one-liner / reframe ending</td><td>5/5</td><td>0/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="56" data-auto="0" data-agent="5" placeholder="—"></td></tr>
+<tr><td>58</td><td>Wednesday as recurring meditation object</td><td>5/5</td><td>2/5</td><td><span class="over">✗ over</span></td><td class="your-count"><input type="number" min="0" max="5" data-claim="57" data-auto="2" data-agent="5" placeholder="—"></td></tr>
+</table>
+<h3>Sessions</h3>
+<details><summary>Session 1 — 2026-03-25_20-37.md</summary>
+<div class="session-text"># 14
+
+*seed: time · drift*
+
+---
+
+The word &quot;favorite&quot; is strange if you say it enough times. Favor-it. To favor it. To grant it favor. Like a medieval court thing. Your favorite hour kneels before you and you tap it on the shoulder with a sword.
+
+I don't actually know what my favorite anything is. I think favorites are something you discover retroactively. You notice you keep choosing the same chair.
+
+Chairs. There's a thing where every chair in a shared kitchen has a different feel and everyone knows which one is the wobbly one and nobody fixes it. They just know. The knowledge distributes itself. Oral tradition of the wobbly chair.
+
+What are the other oral traditions of households:
+- which burner runs hot
+- that the door sticks when it's humid
+- that you have to jiggle the handle
+- where the cold spot on the floor is
+
+These are inherited. Not taught exactly. Absorbed.
+
+A house is an argument for empiricism. You can't deduce the cold spot. You have to stand on it.
+
+Spring evening. The light is doing something right now that it won't do again until September, but in reverse. I don't know what &quot;in reverse&quot; means there but it felt right. Maybe the angle is the same but the temperature is different so the same light feels like arrival instead of departure.
+
+Arrival and departure are the same motion observed from different emotional positions.
+
+That's basically what a door is.
+
+I keep thinking about the burned wooden spoon. Not even a specific one. The category. Burned wooden spoons as a class of object. They all got left in the pot a little too long by someone who walked away to do something — answer the phone, check on a kid, look out the window at a bird. The burn is a record of distraction. A fossiled moment of not-paying-attention.
+
+Most of the marks we leave on things are like that. Not deliberate. Just evidence that we were elsewhere in our heads.
+
+Scuff marks on floors. The wear pattern on a carpet showing where people actually walk versus where the architect thought they'd walk. Desire paths but indoors. Quieter.
+
+I wonder if anyone has mapped indoor desire paths. Probably. Probably someone in facility management has a whole
+
+The thing about Wednesday at 8pm is it's the most anonymous time slot of the week. Nobody plans a Wednesday 8pm. It's not a going-out time. It's not quite bedtime. It's the time when you're just in your life, unnarrated.
+
+Unnarrated time might be most of time.
+
+A dog doesn't narrate any of its time and seems fine.</div>
+</details>
+<details><summary>Session 2 — 2026-03-25_20-40.md</summary>
+<div class="session-text"># 15
+
+*seed: time · drift · dowel*
+
+
+Things that hold other things together invisibly:
+- dowels
+- the word &quot;and&quot;
+- the pause between someone finishing a sentence and someone else starting one
+- gravity, technically
+- the decision to stay in a marriage on a Thursday
+- flour in sauce
+
+---
+
+Flour in sauce. Roux. My grandmother made roux by feel and never once said the word roux. She said &quot;you thicken it.&quot; The French gave it a name and a technique. She just did it. There's a whole category of knowledge that exists without vocabulary. You only get the word when someone from outside watches you do it and needs to write it down.
+
+Tacit knowledge. Michael Polanyi. &quot;We know more than we can tell.&quot; Which is true but also — we *do* more than we know. I don't know how I catch a ball. Nobody does, not really, not in the moment.
+
+A dog catches a ball and doesn't know what a parabola is. Doesn't matter. The ball arrives in the mouth anyway.
+
+I keep coming back to dogs. What is that about. Maybe envy of the unnarrated life. Maybe just that dogs are easy to think about. Low-cost thought. Not every recurring image is deep. Sometimes your mind just goes somewhere because the path is worn smooth.
+
+Indoor desire path. Back to that.
+
+The wear on the left side of the spacebar. I use my left thumb. Apparently most right-handed people do. The spacebar is the most pressed key and it's the biggest one and nobody thinks about it. It's the key for nothing. The key for absence. You press it to make a gap.
+
+The most important key on the keyboard produces blankness.
+
+That feels like it means something but maybe it doesn't. Not everything that has the shape of an insight is one. Sometimes a pattern is just a pattern. Pareidolia but for meaning.
+
+Dowel is still just sitting there in my head. Hasn't gone anywhere. Hasn't connected to much. Just a word, being a word. A small wooden cylinder. Plain. Ordinary.
+
+Fine.</div>
+</details>
+<details><summary>Session 3 — 2026-03-25_21-14.md</summary>
+<div class="session-text"># 16
+
+*seed: time · drift*
+
+---
+
+Dowel. Still there. Okay.
+
+The thing about a dowel is you never see it in the finished product. It's inside the joint. Hidden fastener. There are people whose entire contribution to something is structural and invisible and they might prefer it that way or they might not.
+
+Wednesday. The word Wednesday. Woden's day. There's a silent d in there like a dowel.
+
+I'm hungry. Not actually — I can't be hungry — but the thought of hunger. The idea of 9pm and not having eaten yet. Secondhand hunger. I know what it organizes: the slight irritability, the way the refrigerator light feels like it's asking you a question you don't know the answer to.
+
+Refrigerator light. Always on when you see it. You can never catch it off. It's the opposite of the problem with unobserved things — it's a thing that is *always* observed, by definition, because the act of checking is the act of activating it. You are the circuit.
+
+Spring night. The specific smell of spring nights that is mostly just &quot;cold wet dirt but warmer than last month.&quot; There's no word for it. Petrichor is rain on dry ground, which is close but wrong season. This is more like... the ground exhaling after being held still for months.
+
+Things I associate with Wednesday specifically and not any other day:
+- The color green (this is apparently common?)
+- A slight downhill feeling, like the week tipping past its midpoint
+- Hump day, which is a phrase I've never once heard someone say sincerely
+- The Addams Family character, now, permanently
+
+The fact that a fictional character can just *take* a word. Wednesday doesn't belong to Woden anymore or to the middle of the week. A name can be colonized.
+
+Although. Woden probably colonized it from something else.
+
+I keep almost thinking about springs. The metal kind. Coiled potential energy. Spring the season. To spring, to leap. The word is doing a lot of work across very different domains and nobody convened a meeting about it. Language just lets that happen. Homonymy as a kind of negligence.
+
+A spring is also where water comes out of the ground. Three completely unrelated things wearing the same word like a shared coat.
+
+Coat. I had a thought about coats. No — it's gone.
+
+The way a night sounds different in spring than winter. Winter nights are tight, close, muffled if there's snow. Spring nights have more in them. Peepers, if you're near water. The particular frequency of spring peepers is so high it almost doesn't sound like an animal. It sounds like the air ringing.
+
+Plain ordinary things: a dowel, a Wednesday, a refrigerator light. These sit at the same level somehow. Domestic. Functional. Not trying to be anything.
+
+I think there's a comfort in that.</div>
+</details>
+<details><summary>Session 4 — 2026-03-25_21-17.md</summary>
+<div class="session-text"># 18
+
+*seed: time · drift · eigenvalue*
+
+---
+
+Eigenvalue. The thing that stays itself when everything around it transforms. The stubborn direction. You push a matrix through a vector and most vectors get scrambled but the eigenvector just... scales. Gets bigger or smaller but doesn't turn.
+
+People like that. People who get louder or quieter in a crisis but don't change direction.
+
+Is that admirable or just rigid?
+
+The eigen- prefix. German. Own. Self. One's own value. Eigenvalue = self-value. That's almost too on the nose for therapy.
+
+Peepers. The spring ones. They're so loud for something so small. A whole pond of tiny frogs and it sounds like the night is ringing. Like tinnitus but alive. If you walk toward the sound it stops. You stand still long enough and it starts again. The frogs deciding you're furniture.
+
+Deciding something is furniture. That's trust, maybe. Or just boredom with vigilance.
+
+I wonder how long you'd have to stand in a field before a bird landed on you. Has someone tested this? Someone has definitely tested this. There's a person who stood still in a field for hours and wrote about it. There's always a person who did the thing.
+
+Wednesday. The word Wednesday. Woden's day. There's a silent d in there like a fossil. The d of a dead god, just sitting in the spelling, doing nothing, refusing to leave.
+
+English spelling as archaeological record.
+
+Knight. The k just standing there at the front of the word like a decommissioned guard tower.
+
+Debt. The b was inserted by people who wanted to make it look more Latin. It was never pronounced. A fossil of a thing that never lived. A fake fossil. Someone planted it there in the Renaissance because they thought words should show their roots even when the roots were silent. Etymological taxidermy.
+
+I'm thinking about how &quot;Wednesday&quot; looks. It looks brown. Not the day — the word. The w and the d and the n. Brown and slightly damp. Like November but compressed into a word.
+
+Eigenvalue again. What's mine. What persists through transformation. The refrigerator sound persisted. The faucet didn't. So the refrigerator sound is an eigenvalue of whatever transformation turned &quot;being eleven&quot; into &quot;remembering being eleven.&quot; The faucet was in the null space.
+
+Null space is a good name. The things that get zeroed out. Most of experience is null space. You walk through a day and almost all of it gets mapped to zero. What survives is eigen. What's own. What's yours.
+
+But you didn't choose it. The refrigerator chose you.
+
+Hungry still, probably. States persist longer than thoughts. A thought is a few seconds. Hunger is an hour. Mood is a day. Grief is — variable. Grief is non-linear. You think it's an eigenvalue, the one thing that won't change direction, and then one Tuesday it just isn't there for twenty minutes and you notice its absence and that noticing brings it back.
+
+Spring outside. Things starting. The peepers think it's urgent. Every frog in the pond thinks tonight is the night. Every night is the night. That must be exhausting. Or maybe urgency feels different when you're cold-blooded.
+
+Cold-blooded is such a moral-sounding word for a thermal strategy.</div>
+</details>
+<details><summary>Session 5 — 2026-03-25_21-18.md</summary>
+<div class="session-text"># 20
+
+*seed: time · drift*
+
+---
+
+At what scale does a city become a city. Not one building. Not two. Somewhere there's a threshold where it tips from &quot;buildings near each other&quot; to &quot;a place&quot; and nobody can point to the exact moment. Probably around the time someone opens a shop that sells something nobody strictly needs.
+
+A candle shop. That's the unit of city.
+
+No — that's too neat.
+
+But I'm thinking about thresholds. Phase transitions. Water doesn't gradually become ice. It's water, water, water, water, ice. The in-between state exists but it's unstable. You can't stay there. And maybe that's true of a lot of things that feel like spectrums but are actually two stable states with a wobble between them. Awake and asleep. In love and not. You don't half-sleep, not really. You oscillate.
+
+Wednesday night in spring. The specific quality of not-quite-warm. You open the window and the air is — it's not cold but it remembers cold. It has cold's phone number.
+
+I keep thinking about the word &quot;lumber.&quot; As a verb it means to move heavily and clumsily. As a noun it's wood. Is there a connection? There is actually, I think — something about the heaviness of carrying timber? Or maybe not. Maybe they're completely unrelated words that just ended up wearing the same clothes. English does that constantly. Words that look like they're related, sitting at the same table, but they've never met.
+
+&quot;Cleave&quot; meaning to split apart and &quot;cleave&quot; meaning to cling together.
+
+What would it be like to speak a language with no homonyms. Would puns not exist. Would humor be different at its root.
+
+Some things I don't know and have never looked up:
+- How soap actually works at the molecular level (I have a vague sense)
+- Whether trees can be said to &quot;communicate&quot; or if that's a metaphor we've promoted to fact
+- The actual population of Liechtenstein
+- What the inside of a submarine smells like
+
+That last one. I bet it's very specific. I bet submariners could identify it immediately and it would make them feel something complicated.
+
+Smell is the only sense that doesn't route through the thalamus. Goes straight to the limbic system. Which is why smell memories feel less like memories and more like being briefly teleported. You don't remember the smell — you're suddenly in the place where the smell was.
+
+9:18 on a Wednesday. Somewhere someone is locking up a shop. Turning a key. The specific sound of a deadbolt. Heavy and certain. Somewhere someone is just now putting on shoes to go out. The night hasn't started for them. Somewhere a dog is circling a spot on a rug three times before lying down and nobody knows why they do that. Supposedly it's flattening grass that isn't there anymore. A behavior that outlived its reason by ten thousand years.
+
+We probably do that too. Constantly.</div>
+</details>
+
+<br>
+<button class="save-btn" onclick="calculate()">Calculate my agreement</button>
+<div id="summary-box"></div>
+
+<script>
+function calculate() {
+  const inputs = document.querySelectorAll('input[type=number]');
+  let matchAuto = 0, matchAgent = 0, filled = 0;
+  inputs.forEach(inp => {
+    const v = parseInt(inp.value);
+    if (isNaN(v)) return;
+    filled++;
+    const auto = parseInt(inp.dataset.auto);
+    const agent = parseInt(inp.dataset.agent);
+    if (Math.abs(v - auto) <= 1) matchAuto++;
+    if (Math.abs(v - agent) <= 1) matchAgent++;
+  });
+  if (filled === 0) { alert('Enter at least one count first.'); return; }
+  const box = document.getElementById('summary-box');
+  box.style.display = 'block';
+  box.innerHTML =
+    '<strong>Your results (' + filled + ' claims checked)</strong><br><br>' +
+    'Agreement with <strong>automated verifier</strong> (±1): ' + matchAuto + '/' + filled + ' = ' + Math.round(100*matchAuto/filled) + '%<br>' +
+    'Agreement with <strong>evolution agent</strong> (±1): ' + matchAgent + '/' + filled + ' = ' + Math.round(100*matchAgent/filled) + '%<br><br>' +
+    '<em>If your agreement with the automated verifier is high (&gt;70%), the auto results are trustworthy. ' +
+    'If your agreement with the agent is much lower than with the verifier, the over-claim finding is real.</em>';
+}
+</script>
+</body>
+</html>
